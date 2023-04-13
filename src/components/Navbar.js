@@ -1,68 +1,77 @@
 import { Link } from "gatsby";
-import React from "react";
-import styled from "styled-components";
-
-const Container = styled.div`
-  margin: 3rem auto;
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`;
-//prueba de cambios con git
-
-// const UserWrapper = styled.div`
-//   display: flex;
-//   align-items: center;
-//   margin: 0 auto 12px auto;
-//   &:last-child {
-//     margin-bottom: 0;
-//   }
-// `
-
-// const Avatar = styled.img`
-//   flex: 0 0 96px;
-//   width: 96px;
-//   height: 96px;
-//   margin: 0;
-// `
-
-// const Description = styled.div`
-//   flex: 1;
-//   margin-left: 18px;
-//   padding: 12px;
-// `
-
-// const Username = styled.h2`
-//   margin: 0 0 12px 0;
-//   padding: 0;
-// `
-
-// const Excerpt = styled.p`
-//   margin: 0;
-// `
-
-// const User = props => (
-//   <UserWrapper>
-//     <Avatar src={props.avatar} alt="" />
-//     <Description>
-//       <Username>{props.username}</Username>
-//       <Excerpt>{props.excerpt}</Excerpt>
-//     </Description>
-//   </UserWrapper>
-// )
+import React, { useEffect, useState } from "react";
+// import { navigate } from "@reach/router";
+// import { useLocation } from "react-router-dom";
+import logo from "../assets/logo-rummel.png";
+import data from "../data/NavBarData";
+import {
+  Nav,
+  NavbarContainer,
+  NavLogo,
+  NavIcon,
+  MobileIcon,
+  NavMenu,
+  NavLinks,
+  NavItem,
+} from "../styles/NavBarStyles";
+import { FiMenu, FiX } from "react-icons/fi";
+import { IconContext } from "react-icons";
 
 export default function Navbar() {
+  const [click, setClick] = useState(false);
+  const [scroll, setScroll] = useState(false);
+
+  // const location = useLocation();
+
+  const handleClick = () => {
+    setClick(!click);
+  };
+
+  // const scrollTo = (id) => {
+  //   const element = document.getElementById(id);
+
+  //   element.scrollIntoView({
+  //     behavior: "smooth",
+  //   });
+  // };
+
+  const closeMobileMenu = () => {
+    setClick(false);
+  };
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+  };
+
+  useEffect(() => {
+    changeNav();
+    window.addEventListener("scroll", changeNav);
+  }, []);
+
   return (
-    <Container>
-      <h1>Logo</h1>
-      <div className="links">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/mix&master">Mix & Master</Link>
-        <Link to="/courses">Courses</Link>
-      </div>
-    </Container>
+    <>
+      <IconContext.Provider value={{ color: "#131313" }}>
+        <Nav active={scroll} click={click}>
+          <NavbarContainer>
+            <NavLogo to="/" onClick={closeMobileMenu}>
+              <NavIcon src={logo} alt="logo" />
+            </NavLogo>
+            <MobileIcon onClick={handleClick}>
+              {click ? <FiX /> : <FiMenu />}
+            </MobileIcon>
+            <NavMenu onClick={handleClick} click={click}>
+              {data.map((el, index) => (
+                <NavItem key={index}>
+                  <NavLinks to={el.to}>{el.text}</NavLinks>
+                </NavItem>
+              ))}
+            </NavMenu>
+          </NavbarContainer>
+        </Nav>
+      </IconContext.Provider>
+    </>
   );
 }
