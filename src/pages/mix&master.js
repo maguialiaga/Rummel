@@ -5,7 +5,7 @@ export default function MixMaster() {
   return (
     <Layout>
       <div>
-        <p>mix&master page</p>
+        <p>Mix & Master Page</p>
       </div>
     </Layout>
   );

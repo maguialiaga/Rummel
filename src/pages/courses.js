@@ -5,7 +5,7 @@ export default function Courses() {
   return (
     <Layout>
       <div>
-        <p>course page</p>
+        <p>Production lessons Page</p>
       </div>
     </Layout>
   );

@@ -6,15 +6,15 @@ const data = [
   },
   {
     to: "/courses",
-    text: "Courses",
+    text: "Production Lessons",
   },
   {
     to: "/about",
-    text: "About",
+    text: "About us",
     id: "about",
   },
   {
-    to: "/",
+    to: "/contact",
     text: "Contact",
   },
 ];

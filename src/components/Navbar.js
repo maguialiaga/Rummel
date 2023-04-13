@@ -1,4 +1,3 @@
-import { Link } from "gatsby";
 import React, { useEffect, useState } from "react";
 // import { navigate } from "@reach/router";
 // import { useLocation } from "react-router-dom";

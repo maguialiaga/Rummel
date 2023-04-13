@@ -27,7 +27,8 @@ export const NavbarContainer = styled(Container)`
   height: 80px;
   z-index: 1;
   width: 100%;
-  max-width: 1000px;
+  /* max-width: 1000px; //este te cambia lo cerca que estan el logo y los links */
+  max-width: 1200px;
   ${Container}
 `;
 
