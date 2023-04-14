@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 // import { useLocation } from "react-router-dom";
 import logo from "../assets/logo-rummel.png";
 import data from "../data/NavBarData";
+import { Button } from "../globalStyles";
 import {
   Nav,
   NavbarContainer,
@@ -20,19 +21,9 @@ export default function Navbar() {
   const [click, setClick] = useState(false);
   const [scroll, setScroll] = useState(false);
 
-  // const location = useLocation();
-
   const handleClick = () => {
     setClick(!click);
   };
-
-  // const scrollTo = (id) => {
-  //   const element = document.getElementById(id);
-
-  //   element.scrollIntoView({
-  //     behavior: "smooth",
-  //   });
-  // };
 
   const closeMobileMenu = () => {
     setClick(false);
@@ -67,6 +58,11 @@ export default function Navbar() {
                   <NavLinks to={el.to}>{el.text}</NavLinks>
                 </NavItem>
               ))}
+              <NavItem key={"contact"}>
+                <NavLinks to="/contact">
+                  <Button>Contact</Button>
+                </NavLinks>
+              </NavItem>
             </NavMenu>
           </NavbarContainer>
         </Nav>

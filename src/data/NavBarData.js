@@ -13,10 +13,10 @@ const data = [
     text: "About us",
     id: "about",
   },
-  {
-    to: "/contact",
-    text: "Contact",
-  },
+  // {
+  //   to: "/contact",
+  //   text: "Contact",
+  // },
 ];
 
 export default data;

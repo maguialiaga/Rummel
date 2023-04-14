@@ -20,6 +20,26 @@ export const Container = styled.div`
   }
 `;
 
+export const Button = styled.button`
+  border-radius: 4px;
+  background: none;
+  white-space: nowrap;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  outline: none;
+  border: 2px solid #fff;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+
+  &:hover {
+    transition: 0.3s ease;
+    background-color: #fff;
+    color: black;
+  }
+`;
+
 export default GlobalStyle;
 
 // body{
