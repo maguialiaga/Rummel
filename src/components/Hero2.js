@@ -8,7 +8,7 @@ import {
   NavBarBtn,
 } from "../globalStyles";
 import video from "../assets/hero.mp4";
-import pic from "../assets/production.png";
+// import pic from "../assets/production.png";
 import {
   HeroVideo1,
   HeroVideo2,
@@ -19,19 +19,20 @@ import {
 } from "../styles/HeroStyles";
 import { FiPlayCircle } from "react-icons/fi";
 
-export default function Hero() {
+export default function Hero2() {
   return (
     <>
       <HeroSection>
-        <HeroVideo1 src={video} autoPlay muted />
+        {/* <HeroVideo2 src={video} autoPlay muted /> */}
         <Container>
-          <MainHeading>Mix & Mastering</MainHeading>
-          <HeroText>
-            We take care of your music to make it sound at a professional level
-          </HeroText>
+          <MainHeadingBis>1:1 Production Lessons</MainHeadingBis>
+          <HeroTextBis>
+            Personalized programm to improve your skills for electronic music
+            production
+          </HeroTextBis>
           <ButtonWrapper>
-            <Link to="/mix&master">
-              <Button>Get Started</Button>
+            <Link to="/courses">
+              <NavBarBtn>Learn More</NavBarBtn>
             </Link>
           </ButtonWrapper>
         </Container>

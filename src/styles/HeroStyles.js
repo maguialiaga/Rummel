@@ -9,12 +9,30 @@ export const HeroSection = styled.section`
   box-shadow: inset 0 0 0 1000px rgba (0, 0, 0, 0.2);
 `;
 
-export const HeroVideo = styled.video`
+export const HeroSection2 = styled.section`
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  /* padding-top: clamp(70px, 25vh, 220px); */
+  box-shadow: inset 0 0 0 1000px rgba (0, 0, 0, 0.2);
+`;
+
+export const HeroVideo1 = styled.video`
   object-fit: cover;
   width: 100%;
   height: 100%;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
   top: 0;
+  position: absolute;
+  z-index: -1;
+`;
+
+export const HeroVideo2 = styled.video`
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
+  /* top: 0; */
   position: absolute;
   z-index: -1;
 `;
@@ -26,6 +44,15 @@ export const HeroText = styled.p`
   text-align: center;
   letter-spacing: 2px;
   color: #fff;
+`;
+
+export const HeroTextBis = styled.p`
+  margin-bottom: 35px;
+  font-size: clamp(0.9rem, 1.5vw, 1.3rem);
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: black;
 `;
 
 export const ButtonWrapper = styled.div`

@@ -3,8 +3,10 @@ import { Container } from "../globalStyles";
 import { Link } from "gatsby";
 
 export const Nav = styled.nav`
-  background-color: rgb(0, 0, 0, 0.6);
-  backdrop-filter: blur(8px);
+  /* background-color: rgb(0, 0, 0, 0.6); */
+  /* background-color: rgb(255, 255, 255, 0.5); */
+  background-color: rgb(255, 255, 255);
+  /* backdrop-filter: blur(8px); */
   box-shadow: 0 20px 30px rgb(0, 0, 0, 0.15);
   /* width: 100%; */
   height: 80px;
@@ -80,7 +82,8 @@ export const NavMenu = styled.ul`
     visibility: ${({ click }) => (click ? "visible" : "hidden")};
     transform: translateY(${({ click }) => (click ? "0" : "-10px")});
     transition: opacity 0.5s ease;
-    background-color: rgb(0, 0, 0, 0.6);
+    /* background-color: rgb(0, 0, 0, 0.6); */
+    background-color: rgb(255, 255, 255);
   }
   > li:first-child {
     margin-left: auto;
@@ -106,7 +109,8 @@ export const NavLinks = styled(Link)`
   padding: 0.5rem 1rem;
   height: 100%;
   &:hover {
-    color: #fff;
+    /* text-decoration: underline; */
+    color: rgb(105, 105, 105);
     transition: all 0.3s ease;
   }
   @media screen and (max-width: 960px) {
@@ -115,7 +119,8 @@ export const NavLinks = styled(Link)`
     width: 100%;
     display: table;
     &:hover {
-      color: #fff;
+      /* text-decoration: underline; */
+      color: rgb(105, 105, 105);
       transition: all 0.3s ease;
     }
   }

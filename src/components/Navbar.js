@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 // import { useLocation } from "react-router-dom";
 import logo from "../assets/logo-rummel.png";
 import data from "../data/NavBarData";
-import { Button } from "../globalStyles";
+import { NavBarBtn } from "../globalStyles";
 import {
   Nav,
   NavbarContainer,
@@ -60,7 +60,7 @@ export default function Navbar() {
               ))}
               <NavItem key={"contact"}>
                 <NavLinks to="/contact">
-                  <Button>Contact</Button>
+                  <NavBarBtn>Contact</NavBarBtn>
                 </NavLinks>
               </NavItem>
             </NavMenu>

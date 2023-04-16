@@ -19,6 +19,25 @@ export const Container = styled.div`
     padding: 0 30px;
   }
 `;
+export const NavBarBtn = styled.button`
+  border-radius: 4px;
+  background: none;
+  white-space: nowrap;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: black;
+  outline: none;
+  border: 2px solid black;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+
+  &:hover {
+    transition: 0.3s ease;
+    background-color: black;
+    color: #fff;
+  }
+`;
 
 export const Button = styled.button`
   border-radius: 4px;
@@ -43,6 +62,14 @@ export const MainHeading = styled.h1`
   font-size: clamp(2.3rem, 6vw, 4.5rem);
   margin-bottom: 2rem;
   color: ${({ inverse }) => (inverse ? "$403ae3" : "#fff")};
+  width: 100%;
+  letter-spacing: 4px;
+  text-align: center;
+`;
+export const MainHeadingBis = styled.h1`
+  font-size: clamp(2.3rem, 6vw, 4.5rem);
+  margin-bottom: 2rem;
+  color: "black";
   width: 100%;
   letter-spacing: 4px;
   text-align: center;
