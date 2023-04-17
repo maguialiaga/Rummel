@@ -1,28 +1,19 @@
 import React from "react";
 import { Link } from "gatsby";
-import {
-  Container,
-  MainHeading,
-  Button,
-  MainHeadingBis,
-  NavBarBtn,
-} from "../globalStyles";
-import video from "../assets/hero.mp4";
+import { Container, MainHeadingBis, NavBarBtn } from "../globalStyles";
+// import video from "../assets/hero2.mp4";
 // import pic from "../assets/production.png";
 import {
-  HeroVideo1,
-  HeroVideo2,
-  HeroSection,
-  HeroText,
   ButtonWrapper,
   HeroTextBis,
+  HeroSection2,
+  // HeroVideo2,
 } from "../styles/HeroStyles";
-import { FiPlayCircle } from "react-icons/fi";
 
 export default function Hero2() {
   return (
     <>
-      <HeroSection>
+      <HeroSection2>
         {/* <HeroVideo2 src={video} autoPlay muted /> */}
         <Container>
           <MainHeadingBis>1:1 Production Lessons</MainHeadingBis>
@@ -36,7 +27,7 @@ export default function Hero2() {
             </Link>
           </ButtonWrapper>
         </Container>
-      </HeroSection>
+      </HeroSection2>
     </>
   );
 }

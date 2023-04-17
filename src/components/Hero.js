@@ -1,23 +1,13 @@
 import React from "react";
 import { Link } from "gatsby";
-import {
-  Container,
-  MainHeading,
-  Button,
-  MainHeadingBis,
-  NavBarBtn,
-} from "../globalStyles";
+import { Container, MainHeading, Button } from "../globalStyles";
 import video from "../assets/hero.mp4";
-import pic from "../assets/production.png";
 import {
   HeroVideo1,
-  HeroVideo2,
   HeroSection,
   HeroText,
   ButtonWrapper,
-  HeroTextBis,
 } from "../styles/HeroStyles";
-import { FiPlayCircle } from "react-icons/fi";
 
 export default function Hero() {
   return (
