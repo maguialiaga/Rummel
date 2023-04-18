@@ -55,6 +55,9 @@ const Carousel = ({ images, links }) => {
           <FiChevronRight onClick={handleNextClick} />
         </IconContext.Provider>
       </Container>
+      <br></br>
+      <br></br>
+      <br></br>
     </>
   );
 };
