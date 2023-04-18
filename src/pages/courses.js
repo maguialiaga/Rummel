@@ -1,12 +1,13 @@
 import React from "react";
 import Layout from "../components/Layout";
+import Features from "../components/Features";
 
 export default function Courses() {
   return (
     <Layout>
-      <div>
-        <p>Production lessons Page</p>
-      </div>
+      <>
+        <Features />
+      </>
     </Layout>
   );
 }

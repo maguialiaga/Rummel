@@ -109,7 +109,7 @@ export const TextWrapper = styled.div`
 export const Section = styled.section`
   padding: ${({ padding }) => (padding ? padding : "140px 0")};
   margin: ${({ margin }) => (margin ? margin : "")};
-  background: ${({ inverse }) => (inverse ? "white" : "#071c2f")};
+  background: ${({ inverse }) => (inverse ? "white" : "black")};
   position: ${({ position }) => (position ? position : "")};
   width: ${({ width }) => (width ? width : "auto")};
   min-width: ${({ minWidth }) => (minWidth ? minWidth : "auto")};
@@ -137,6 +137,23 @@ export const Row = styled.div`
   max-height: ${({ maxHeight }) => (maxHeight ? maxHeight : "auto")};
   min-height: ${({ minHeight }) => (minHeight ? minHeight : "auto")};
   flex-wrap: ${({ wrap }) => (wrap ? wrap : "")};
+`;
+
+export const Column = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: ${({ justify }) => (justify ? justify : "")};
+  align-items: ${({ align }) => (align ? align : "")};
+  gap: ${({ gap }) => (gap ? gap : "")};
+  padding: ${({ padding }) => (padding ? padding : "")};
+  margin: ${({ margin }) => (margin ? margin : "")};
+  position: ${({ position }) => (position ? position : "")};
+  width: ${({ width }) => (width ? width : "auto")};
+  min-width: ${({ minWidth }) => (minWidth ? minWidth : "auto")};
+  max-width: ${({ maxWidth }) => (maxWidth ? maxWidth : "auto")};
+  height: ${({ height }) => (height ? height : "auto")};
+  max-height: ${({ maxHeight }) => (maxHeight ? maxHeight : "auto")};
+  min-height: ${({ minHeight }) => (minHeight ? minHeight : "auto")};
 `;
 
 export default GlobalStyle;

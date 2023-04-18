@@ -13,7 +13,7 @@ export default function Hero() {
   return (
     <>
       <HeroSection>
-        <HeroVideo1 src={video} autoPlay muted />
+        <HeroVideo1 src={video} autoPlay loop muted />
         <Container>
           <MainHeading>Mix & Mastering</MainHeading>
           <HeroText>

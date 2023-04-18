@@ -3,13 +3,13 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 // import { IconContext } from "react-icons";
 // import { data, sliderSettings } from "../data/CarouselData";
 // import { Row, Heading, Section, TextWrapper } from "../globalStyles";
-import { Heading, MainHeadingThree } from "../globalStyles";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
+import { MainHeadingThree } from "../globalStyles";
 import {
   Container,
-  PrevButton,
   Image,
-  NextButton,
+  // PrevButton,
+  // NextButton,
   // ButtonContainer,
   // ReviewSlider,
   // ImageWrapper,
@@ -46,7 +46,7 @@ const Carousel = ({ images, links }) => {
       <Container>
         <IconContext.Provider value={{ size: "3rem", color: "black" }}>
           <FiChevronLeft onClick={handlePrevClick} />
-          <a target="_blank" href={links[currentLinkIndex]}>
+          <a target="_blank" rel="noreferrer" href={links[currentLinkIndex]}>
             <Image
               src={images[currentImageIndex]}
               alt={`Image ${currentImageIndex + 1}`}
