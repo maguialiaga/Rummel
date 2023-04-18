@@ -12,7 +12,7 @@ import {
   FooterColumn,
   FooterGrid,
 } from "../styles/FooterStyles";
-import { footerData, footerSocialData } from "../data/FooterData";
+import { footerSocialData } from "../data/FooterData";
 import { Row, Section } from "../globalStyles";
 import logo from "../assets/logo-rummel-blanco.png";
 // import { NavIcon, Navlogo } from "../styles/NavBarStyles";
@@ -24,9 +24,6 @@ function Footer() {
         <FooterGrid justify="space-between">
           <FooterColumn id="footerLogo">
             <FooterLogo to="/">
-              {/* <NavLogo to="/" onClick={closeMobileMenu}>
-                <NavIcon src={logo} alt="logo" />
-              </NavLogo> */}
               <SocialIcon src={logo} />
             </FooterLogo>
             <FooterAddress>Barcelona, Spain</FooterAddress>

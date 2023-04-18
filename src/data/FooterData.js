@@ -34,10 +34,10 @@ export const footerSocialData = [
 ];
 
 export const footerData = [
-  {
-    title: "Fill your ",
-    links: ["Blog", "FAQs", "Support", "About us"],
-  },
+  // {
+  //   title: "Fill your ",
+  //   links: ["Blog", "FAQs", "Support", "About us"],
+  // },
   // {
   //   title: "Product",
   //   links: ["Login", "Personal", "Business", "Team"],

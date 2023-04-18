@@ -1,4 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
+import { motion } from "framer-motion";
+// import img from "../src/assets/production.png";
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -96,6 +98,19 @@ export const Heading = styled.h2`
   text-align: center;
   width: ${({ width }) => (width ? width : "100%")};
 `;
+
+export const Heading2 = styled(motion.h2)`
+  margin-bottom: 24px;
+  font-size: clamp(0.5rem, 7vw, 1.5rem);
+  letter-spacing: 0.3rem;
+  line-height: 1.1;
+  font-weight: 600;
+  color: black;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+`;
+
 export const TextWrapper = styled.div`
   color: ${({ color }) => (color ? color : "")};
   font-size: ${({ size }) => (size ? size : "")};
@@ -110,6 +125,22 @@ export const Section = styled.section`
   padding: ${({ padding }) => (padding ? padding : "140px 0")};
   margin: ${({ margin }) => (margin ? margin : "")};
   background: ${({ inverse }) => (inverse ? "white" : "black")};
+  position: ${({ position }) => (position ? position : "")};
+  width: ${({ width }) => (width ? width : "auto")};
+  min-width: ${({ minWidth }) => (minWidth ? minWidth : "auto")};
+  max-width: ${({ maxWidth }) => (maxWidth ? maxWidth : "auto")};
+  height: ${({ height }) => (height ? height : "auto")};
+  max-height: ${({ maxHeight }) => (maxHeight ? maxHeight : "auto")};
+  min-height: ${({ minHeight }) => (minHeight ? minHeight : "auto")};
+  @media screen and (max-width: 768px) {
+    padding: ${({ smPadding }) => (smPadding ? smPadding : "70px 0")};
+  }
+`;
+
+export const Section2 = styled.section`
+  padding: ${({ padding }) => (padding ? padding : "140px 0")};
+  margin: ${({ margin }) => (margin ? margin : "")};
+  background: "white";
   position: ${({ position }) => (position ? position : "")};
   width: ${({ width }) => (width ? width : "auto")};
   min-width: ${({ minWidth }) => (minWidth ? minWidth : "auto")};
