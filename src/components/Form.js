@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import {
   FormColumn,
   FormWrapper,
@@ -13,14 +13,16 @@ import {
 } from "../styles/FormStyles";
 import { Container } from "../globalStyles";
 import validateForm from "../data/validateForm";
+import emailjs from "@emailjs/browser";
 
 const Form = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  // const [password, setPassword] = useState("");
+  const [message, setMessage] = useState("");
   // const [confirmPass, setConfirmPass] = useState("");
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
+  const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -30,12 +32,37 @@ const Form = () => {
       setError(resultError);
       return;
     }
+    emailjs
+      .sendForm(
+        "service_jrm9xqc",
+        "template_nelp46j",
+        form.current,
+        "vRc98fB-F8s0iNWTT"
+      )
+      .then(
+        (res) => {
+          console.log(res.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     setName("");
     setEmail("");
-    // setPassword("");
-    // setConfirmPass("");
+    setMessage("");
     setError(null);
     setSuccess("Email was sent!");
+    // emailjs
+    //   .send(
+    //     "service_jrm9xqc",
+    //     "template_azf9nxh",
+    //     e.target,
+    // "vRc98fB-F8s0iNWTT"
+    //   )
+    //   .then((res) => {
+    //     setSuccess("Email was sent!");
+    //     console.log(res);
+    //   });
   };
 
   const messageVariants = {
@@ -49,18 +76,21 @@ const Form = () => {
       value: name,
       onChange: (e) => setName(e.target.value),
       type: "text",
+      name: "user_name",
     },
     {
       label: "Email",
       value: email,
       onChange: (e) => setEmail(e.target.value),
       type: "email",
+      name: "user_email",
     },
     {
       label: "Message",
-      // value: password,
-      // onChange: (e) => setPassword(e.target.value),
-      // type: "password",
+      value: message,
+      onChange: (e) => setMessage(e.target.value),
+      type: "message",
+      name: "message",
     },
     // {
     //   label: "Confirm Password",
@@ -75,7 +105,7 @@ const Form = () => {
         <FormRow>
           <FormColumn small>
             <FormTitle>Contact Us</FormTitle>
-            <FormWrapper onSubmit={handleSubmit}>
+            <FormWrapper ref={form} onSubmit={handleSubmit}>
               {formData.map((el, index) => (
                 <FormInputRow key={index}>
                   <FormLabel>{el.label}</FormLabel>
@@ -84,6 +114,8 @@ const Form = () => {
                     placeholder={`Enter your ${el.label.toLocaleLowerCase()}`}
                     value={el.value}
                     onChange={el.onChange}
+                    name={el.name}
+                    autoComplete="off"
                   />
                 </FormInputRow>
               ))}
