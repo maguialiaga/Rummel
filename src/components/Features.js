@@ -1,11 +1,10 @@
 import React from "react";
-import { Container, Section } from "../globalStyles";
+import { Container, Section, Heading2 } from "../globalStyles";
 import {
   FeatureText,
   FeatureTitle,
   FeatureWrapper,
   FeatureColumn,
-  FeatureImageWrapper,
   FeatureName,
   FeatureTextWrapper,
 } from "../styles/FeaturesStyles";
@@ -25,21 +24,25 @@ const Features = () => {
     <Section smPadding="50px 10px" position="relative" inverse id="about">
       <Container>
         <FeatureTextWrapper>
-          <FeatureTitle>Some topics we cover</FeatureTitle>
+          <FeatureTitle>Mix & Mastering</FeatureTitle>
+          <Heading2>Budget</Heading2>
         </FeatureTextWrapper>
         <FeatureWrapper>
           {featuresData.map((el, index) => (
             <FeatureColumn
               initial={initial}
               animate={animate}
-              transition={{ duration: 0.5 + index * 0.1 }}
+              transition={{ duration: 0.7 + index * 0.1 }}
               key={index}
             >
-              <FeatureImageWrapper className={el.imgClass}>
+              {/* <FeatureImageWrapper className={el.imgClass}>
                 {el.icon}
-              </FeatureImageWrapper>
+              </FeatureImageWrapper> */}
+
               <FeatureName>{el.name}</FeatureName>
-              {/* <FeatureText>{el.description}</FeatureText> */}
+              {el.description?.map((des) => (
+                <FeatureText>{des}</FeatureText>
+              ))}
             </FeatureColumn>
           ))}
         </FeatureWrapper>

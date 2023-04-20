@@ -1,13 +1,12 @@
 import React from "react";
 import Layout from "../components/Layout";
-import List from "../components/List";
-// import { list } from "../data/ListData";
+import Features from "../components/Features";
 
 export default function MixMaster() {
   return (
     <Layout>
       <>
-        <List />
+        <Features />
       </>
     </Layout>
   );
