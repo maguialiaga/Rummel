@@ -19,7 +19,6 @@ const Form = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  // const [confirmPass, setConfirmPass] = useState("");
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
   const form = useRef();
@@ -52,17 +51,6 @@ const Form = () => {
     setMessage("");
     setError(null);
     setSuccess("Email was sent!");
-    // emailjs
-    //   .send(
-    //     "service_jrm9xqc",
-    //     "template_azf9nxh",
-    //     e.target,
-    // "vRc98fB-F8s0iNWTT"
-    //   )
-    //   .then((res) => {
-    //     setSuccess("Email was sent!");
-    //     console.log(res);
-    //   });
   };
 
   const messageVariants = {
@@ -72,16 +60,14 @@ const Form = () => {
 
   const formData = [
     {
-      label: "Name*",
-      label2: "Enter your name",
+      label: "Name",
       value: name,
       onChange: (e) => setName(e.target.value),
       type: "text",
       name: "user_name",
     },
     {
-      label: "Email*",
-      label2: "Enter your email",
+      label: "Email",
       value: email,
       onChange: (e) => setEmail(e.target.value),
       type: "email",
@@ -89,33 +75,25 @@ const Form = () => {
     },
     {
       label: "Message",
-      label2: "Ask us anything",
       value: message,
       onChange: (e) => setMessage(e.target.value),
       type: "message",
       name: "message",
     },
-    // {
-    //   label: "Confirm Password",
-    //   value: confirmPass,
-    //   onChange: (e) => setConfirmPass(e.target.value),
-    //   type: "password",
-    // },
   ];
   return (
     <FormSection>
       <Container>
         <FormRow>
           <FormColumn small>
-            <FormTitle>Contact us</FormTitle>
+            <FormTitle>Start learning with us</FormTitle>
             <FormWrapper ref={form} onSubmit={handleSubmit}>
               {formData.map((el, index) => (
                 <FormInputRow key={index}>
                   <FormLabel>{el.label}</FormLabel>
                   <FormInput
                     type={el.type}
-                    // placeholder={`Enter your ${el.label.toLocaleLowerCase()}`}
-                    placeholder={el.label2}
+                    placeholder={`Enter your ${el.label.toLocaleLowerCase()}`}
                     value={el.value}
                     onChange={el.onChange}
                     name={el.name}
@@ -124,7 +102,7 @@ const Form = () => {
                 </FormInputRow>
               ))}
 
-              <FormButton type="submit">Send</FormButton>
+              <FormButton type="submit">Get your quote</FormButton>
             </FormWrapper>
             {error && (
               <FormMessage

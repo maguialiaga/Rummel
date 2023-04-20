@@ -15,7 +15,7 @@ export default function validateForm({ name, email }) {
   const regex = new RegExp("^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$");
   if (!email) {
     return "Email required";
-  } else if (!regex.test(email.toLocalLowerCase)) {
+  } else if (regex.test(email.toLocalLowerCase)) {
     return "Email address is invalid";
   }
 

@@ -7,6 +7,7 @@ import {
   Heading,
   // ContentButton,
   Subtitle,
+  Subtitle2,
   ImgWrapper,
   Img,
   ContentColumn,
@@ -20,7 +21,15 @@ import { useAnimation } from "framer-motion";
 
 const topics = [
   {
-    text: ["Abelton use"],
+    text: [
+      "Abelton use",
+      "Music Composition",
+      "Sound Design",
+      "Arrengment",
+      "Mixdown and advanced processing",
+      "How to go from a loop to a finished track",
+      "Music Business and how to aproach Labels",
+    ],
   },
 ];
 
@@ -79,16 +88,26 @@ const Content = ({
                 inverse={inverse}
               >
                 We offer personalized 1:1 presential / remote lessons that cover
-                the whole process behind electronic music production.
+                the whole process behind electronic music production. Some
+                topics we cover:
               </Subtitle>
-              <Subtitle
+              {/* <Subtitle
                 initial={initial}
                 transition={{ delay: 0.7, duration: 0.6 }}
                 animate={animation}
                 inverse={inverse}
-              >
-                Some topics we cover:
-              </Subtitle>
+              ></Subtitle> */}
+              {topics.map((list) =>
+                list.text.map((t) => (
+                  <Subtitle2
+                    initial={initial}
+                    transition={{ delay: 0.7, duration: 0.6 }}
+                    animate={animation}
+                  >
+                    {t}
+                  </Subtitle2>
+                ))
+              )}
             </TextWrapper>
           </ContentColumn>
           <ContentColumn

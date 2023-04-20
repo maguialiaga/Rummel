@@ -86,6 +86,9 @@ export const TopLine = styled(motion.div)`
   letter-spacing: 1.4px;
   margin-bottom: 1.3rem;
   color: #979797;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 export const Img = styled(motion.img)`
@@ -117,6 +120,15 @@ export const Subtitle = styled(motion.p)`
   color: ${({ inverse }) => (inverse ? "#6a6a6a" : "white")};
 `;
 
+export const Subtitle2 = styled(motion.p)`
+  max-width: 440px;
+  margin-bottom: 5px;
+  line-height: 24px;
+  font-weight: 500;
+
+  color: ${({ inverse }) => (inverse ? "#6a6a6a" : "white")};
+`;
+
 export const ContentButton = styled(motion.button)`
   height: 3rem;
   padding: 16px 32px;
@@ -135,25 +147,27 @@ export const ContentButton = styled(motion.button)`
   outline: none;
   border: 2px solid ${({ inverse }) => (inverse ? "#0c4577" : "white")};
   cursor: pointer;
-  position: relative;
-  overflow: hidden;
+  /* position: relative;
+  overflow: hidden; */
   &:before {
     background: ${({ inverse }) => (inverse ? "#0c4577" : "white")};
-    content: "";
+    /* content: "";
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: -1;
+    z-index: -1; */
     transition: all 0.6s ease;
-    width: 100%;
+    /* width: 100%;
     height: 0%;
-    transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg); */
   }
   &:hover:before {
     height: 500%;
   }
   &:hover {
-    color: ${({ inverse }) => (inverse ? "white" : "black")};
+    transition: 0.3s ease;
+    background-color: white;
+    color: black;
   }
 `;

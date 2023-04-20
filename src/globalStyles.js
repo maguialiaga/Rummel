@@ -101,7 +101,7 @@ export const Heading = styled.h2`
 
 export const Heading2 = styled(motion.h2)`
   margin-top: auto;
-  margin-bottom: 24px;
+  margin-bottom: 15px;
   text-align: center;
   font-size: clamp(0.5rem, 7vw, 1.5rem);
   letter-spacing: 0.3rem;

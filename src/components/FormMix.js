@@ -18,8 +18,8 @@ import emailjs from "@emailjs/browser";
 const Form = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [link, setLink] = useState("");
   const [message, setMessage] = useState("");
-  // const [confirmPass, setConfirmPass] = useState("");
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
   const form = useRef();
@@ -52,17 +52,6 @@ const Form = () => {
     setMessage("");
     setError(null);
     setSuccess("Email was sent!");
-    // emailjs
-    //   .send(
-    //     "service_jrm9xqc",
-    //     "template_azf9nxh",
-    //     e.target,
-    // "vRc98fB-F8s0iNWTT"
-    //   )
-    //   .then((res) => {
-    //     setSuccess("Email was sent!");
-    //     console.log(res);
-    //   });
   };
 
   const messageVariants = {
@@ -73,7 +62,7 @@ const Form = () => {
   const formData = [
     {
       label: "Name*",
-      label2: "Enter your name",
+      label2: "Enter your Name",
       value: name,
       onChange: (e) => setName(e.target.value),
       type: "text",
@@ -81,11 +70,20 @@ const Form = () => {
     },
     {
       label: "Email*",
-      label2: "Enter your email",
+      label2: "Enter your Email",
       value: email,
       onChange: (e) => setEmail(e.target.value),
       type: "email",
       name: "user_email",
+    },
+    {
+      label: "Link*",
+      label2:
+        "Enter your Link (Upload your stems to Google Drive, Dropbox or We transfer",
+      value: link,
+      onChange: (e) => setLink(e.target.value),
+      type: "message",
+      name: "message",
     },
     {
       label: "Message",
@@ -95,26 +93,19 @@ const Form = () => {
       type: "message",
       name: "message",
     },
-    // {
-    //   label: "Confirm Password",
-    //   value: confirmPass,
-    //   onChange: (e) => setConfirmPass(e.target.value),
-    //   type: "password",
-    // },
   ];
   return (
     <FormSection>
       <Container>
         <FormRow>
           <FormColumn small>
-            <FormTitle>Contact us</FormTitle>
+            <FormTitle>Send your stems here!</FormTitle>
             <FormWrapper ref={form} onSubmit={handleSubmit}>
               {formData.map((el, index) => (
                 <FormInputRow key={index}>
                   <FormLabel>{el.label}</FormLabel>
                   <FormInput
                     type={el.type}
-                    // placeholder={`Enter your ${el.label.toLocaleLowerCase()}`}
                     placeholder={el.label2}
                     value={el.value}
                     onChange={el.onChange}

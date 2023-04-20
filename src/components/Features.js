@@ -25,6 +25,7 @@ const Features = () => {
       <Container>
         <FeatureTextWrapper>
           <FeatureTitle>Mix & Mastering</FeatureTitle>
+          <Heading2></Heading2>
           <Heading2>Budget</Heading2>
         </FeatureTextWrapper>
         <FeatureWrapper>
