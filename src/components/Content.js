@@ -5,7 +5,7 @@ import {
   TextWrapper,
   TopLine,
   Heading,
-  ContentButton,
+  // ContentButton,
   Subtitle,
   ImgWrapper,
   Img,
@@ -17,6 +17,12 @@ import img from "../assets/production.jpg";
 
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
+
+const topics = [
+  {
+    text: ["Abelton use"],
+  },
+];
 
 const Content = ({
   primary,
@@ -72,20 +78,17 @@ const Content = ({
                 animate={animation}
                 inverse={inverse}
               >
-                {/* {description} */}
                 We offer personalized 1:1 presential / remote lessons that cover
-                the whole process behind electronic music production
+                the whole process behind electronic music production.
               </Subtitle>
-              {/* <ContentButton
+              <Subtitle
                 initial={initial}
-                transition={{ delay: 1, duration: 0.6 }}
+                transition={{ delay: 0.7, duration: 0.6 }}
                 animate={animation}
                 inverse={inverse}
-                primary={primary}
               >
-                {buttonLabel}
-                button
-              </ContentButton> */}
+                Some topics we cover:
+              </Subtitle>
             </TextWrapper>
           </ContentColumn>
           <ContentColumn
@@ -107,5 +110,18 @@ const Content = ({
     </Section>
   );
 };
+
+//  {
+/* <ContentButton
+                initial={initial}
+                transition={{ delay: 1, duration: 0.6 }}
+                animate={animation}
+                inverse={inverse}
+                primary={primary}
+              >
+                {buttonLabel}
+                button
+              </ContentButton> */
+//}
 
 export default Content;
