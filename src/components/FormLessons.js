@@ -15,7 +15,7 @@ import { Container } from "../globalStyles";
 import validateForm from "../data/validateForm";
 import emailjs from "@emailjs/browser";
 
-const Form = () => {
+const FormLessons = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -130,4 +130,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default FormLessons;

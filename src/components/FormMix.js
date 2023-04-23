@@ -15,7 +15,7 @@ import { Container } from "../globalStyles";
 import validateForm from "../data/validateForm";
 import emailjs from "@emailjs/browser";
 
-const Form = () => {
+const FormMix = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [link, setLink] = useState("");
@@ -35,7 +35,7 @@ const Form = () => {
     emailjs
       .sendForm(
         "service_jrm9xqc",
-        "template_nelp46j",
+        "template_6e5i939",
         form.current,
         "vRc98fB-F8s0iNWTT"
       )
@@ -49,6 +49,7 @@ const Form = () => {
       );
     setName("");
     setEmail("");
+    setLink("");
     setMessage("");
     setError(null);
     setSuccess("Email was sent!");
@@ -62,7 +63,7 @@ const Form = () => {
   const formData = [
     {
       label: "Name*",
-      label2: "Enter your Name",
+      label2: "Enter your name",
       value: name,
       onChange: (e) => setName(e.target.value),
       type: "text",
@@ -70,36 +71,36 @@ const Form = () => {
     },
     {
       label: "Email*",
-      label2: "Enter your Email",
+      label2: "Enter your email",
       value: email,
       onChange: (e) => setEmail(e.target.value),
       type: "email",
       name: "user_email",
     },
-    {
-      label: "Link*",
-      label2:
-        "Enter your Link (Upload your stems to Google Drive, Dropbox or We transfer",
-      value: link,
-      onChange: (e) => setLink(e.target.value),
-      type: "message",
-      name: "message",
-    },
-    {
-      label: "Message",
-      label2: "Ask us anything",
-      value: message,
-      onChange: (e) => setMessage(e.target.value),
-      type: "message",
-      name: "message",
-    },
+    // {
+    //   label: "Link* required",
+    //   label2:
+    //     "Enter your Link (Upload your stems to Google Drive, Dropbox or We transfer",
+    //   value: link,
+    //   onChange: (e) => setLink(e.target.value),
+    //   type: "link",
+    //   name: "link",
+    // },
+    // {
+    //   label: "Message",
+    //   label2: "Enter your messsage",
+    //   value: message,
+    //   onChange: (e) => setMessage(e.target.value),
+    //   type: "message",
+    //   name: "message",
+    // },
   ];
   return (
     <FormSection>
       <Container>
         <FormRow>
           <FormColumn small>
-            <FormTitle>Send your stems here!</FormTitle>
+            <FormTitle>Send your stems here</FormTitle>
             <FormWrapper ref={form} onSubmit={handleSubmit}>
               {formData.map((el, index) => (
                 <FormInputRow key={index}>
@@ -114,7 +115,30 @@ const Form = () => {
                   />
                 </FormInputRow>
               ))}
-
+              <FormInputRow key={2}>
+                <FormLabel>Link*</FormLabel>
+                <FormInput
+                  type={"url"}
+                  placeholder={
+                    "Enter your Link (Upload your stems to Google Drive, Dropbox or We transfer"
+                  }
+                  value={link}
+                  onChange={(e) => setLink(e.target.value)}
+                  name={"user_link"}
+                  autoComplete="off"
+                />
+              </FormInputRow>
+              <FormInputRow key={3}>
+                <FormLabel>Message</FormLabel>
+                <FormInput
+                  type={"message"}
+                  placeholder={"Enter your message"}
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  name={"message"}
+                  autoComplete="off"
+                />
+              </FormInputRow>
               <FormButton type="submit">Send</FormButton>
             </FormWrapper>
             {error && (
@@ -143,4 +167,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default FormMix;

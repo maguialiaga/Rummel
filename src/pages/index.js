@@ -2,7 +2,7 @@ import * as React from "react";
 import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import Hero2 from "../components/Hero2";
-import Carousel from "../components/Carousel";
+import Soundcloud from "../components/Soundcloud";
 import image1 from "../assets/soundcloud.png";
 import image2 from "../assets/sinestesia.png";
 import image3 from "../assets/kater.png";
@@ -20,8 +20,9 @@ export default function Home() {
       <>
         <Hero />
         <Hero2 />
-        <br></br>
-        <Carousel images={images} links={links} />
+
+        {/* <Carousel images={images} links={links} /> */}
+        <Soundcloud />
       </>
     </Layout>
   );

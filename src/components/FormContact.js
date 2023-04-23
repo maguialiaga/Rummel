@@ -15,7 +15,7 @@ import { Container } from "../globalStyles";
 import validateForm from "../data/validateForm";
 import emailjs from "@emailjs/browser";
 
-const Form = () => {
+const FormContact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -52,17 +52,6 @@ const Form = () => {
     setMessage("");
     setError(null);
     setSuccess("Email was sent!");
-    // emailjs
-    //   .send(
-    //     "service_jrm9xqc",
-    //     "template_azf9nxh",
-    //     e.target,
-    // "vRc98fB-F8s0iNWTT"
-    //   )
-    //   .then((res) => {
-    //     setSuccess("Email was sent!");
-    //     console.log(res);
-    //   });
   };
 
   const messageVariants = {
@@ -87,14 +76,7 @@ const Form = () => {
       type: "email",
       name: "user_email",
     },
-    {
-      label: "Message",
-      label2: "Ask us anything",
-      value: message,
-      onChange: (e) => setMessage(e.target.value),
-      type: "message",
-      name: "message",
-    },
+
     // {
     //   label: "Confirm Password",
     //   value: confirmPass,
@@ -102,6 +84,17 @@ const Form = () => {
     //   type: "password",
     // },
   ];
+  // const formMessage = [
+  //   {
+  //     label: "Message",
+  //     label2: "Ask us anything",
+  //     value: message,
+  //     onChange: (e) => setMessage(e.target.value),
+  //     type: "message",
+  //     name: "message",
+  //   },
+  // ];
+
   return (
     <FormSection>
       <Container>
@@ -123,6 +116,17 @@ const Form = () => {
                   />
                 </FormInputRow>
               ))}
+              <FormInputRow key={1}>
+                <FormLabel>Message</FormLabel>
+                <FormInput
+                  type={"message"}
+                  placeholder={"Ask us anything"}
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  name={"message"}
+                  autoComplete="off"
+                />
+              </FormInputRow>
 
               <FormButton type="submit">Send</FormButton>
             </FormWrapper>
@@ -152,4 +156,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default FormContact;
