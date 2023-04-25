@@ -148,7 +148,7 @@ export const FormButton = styled.button`
   background: none;
   margin-top: 1.5rem;
   white-space: nowrap;
-  /* color: #fff; */
+  color: black;
   outline: none;
   width: 100%;
   font-size: 1.4rem;

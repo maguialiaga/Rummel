@@ -15,7 +15,7 @@ import {
   FormInputMsg,
   TextArea,
 } from "../styles/FormStyles";
-import { Container } from "../globalStyles";
+import { Container, Heading, MainHeadingFour } from "../globalStyles";
 import validateFormMix from "../data/validateFormMix";
 import emailjs from "@emailjs/browser";
 
@@ -191,6 +191,12 @@ const FormMix = () => {
           </FormColumn>
         </FormRow>
       </Container>
+      <Heading>
+        <MainHeadingFour>
+          Turrnarround of 10 days max. after your payment - 2 Revisions included
+        </MainHeadingFour>
+        <MainHeadingFour>Extra revision ---- 15 EUR</MainHeadingFour>
+      </Heading>
     </FormSection>
   );
 };

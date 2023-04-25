@@ -86,7 +86,15 @@ export const MainHeadingThree = styled.h1`
   letter-spacing: 4px;
   text-align: center;
   /* text-decoration: underline;
-  text-underline-position: 20px; */
+  text-underline-position:20px; */
+`;
+
+export const MainHeadingFour = styled.h1`
+  font-size: clamp(1rem, 1vw, 1rem);
+  color: red;
+  width: 100%;
+  letter-spacing: 3px;
+  text-align: center;
 `;
 
 export const Heading = styled.h2`
