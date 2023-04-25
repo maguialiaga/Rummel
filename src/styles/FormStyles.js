@@ -106,6 +106,7 @@ export const FormSelect = styled.select`
   border-radius: 2px;
   height: 40px;
   width: 100%;
+  /* color: black; */
   border: 1px solid #cfcfcf;
   /* border-bottom: 1px solid #cfcfcf; */
   font-size: 1rem;
