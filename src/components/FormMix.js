@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { forwardRef, useRef, useState } from "react";
 import {
   FormColumn,
   FormWrapper,
@@ -128,7 +128,7 @@ const FormMix = () => {
                 <FormInput
                   type={"URL"}
                   placeholder={
-                    "Enter your Link (Upload your stems to Google Drive, Dropbox or We transfer"
+                    "Enter your Link (Upload your stems to Google Drive, Dropbox or We transfer)"
                   }
                   value={link}
                   onChange={(e) => setLink(e.target.value)}

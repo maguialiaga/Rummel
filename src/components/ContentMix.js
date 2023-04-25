@@ -13,7 +13,6 @@ import {
   ContentColumn,
 } from "../styles/ContentStyles";
 
-// import video from "../assets/hero2.mp4";
 import img from "../assets/production.jpg";
 
 import { useInView } from "react-intersection-observer";
@@ -54,6 +53,10 @@ const Content = ({
       });
     }
   }, [inView, animation]);
+
+  // const handleClick = () => {
+  //   ref.current?.scrollIntoView({ behavior: "smooth " });
+  // };
 
   return (
     <Section inverse={inverse} ref={ref}>
@@ -96,7 +99,13 @@ const Content = ({
                 transition={{ delay: 1, duration: 0.6 }}
                 animate={animation}
                 primary={primary}
-                // onClick={scrollTo(0, 0)}
+                onClick={() =>
+                  window.scrollTo({
+                    top: 2000,
+                    behavior: "smooth",
+                  })
+                }
+                // onClick={handleClick}
               >
                 Send your link here
               </ContentButton>
