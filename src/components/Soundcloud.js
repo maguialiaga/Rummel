@@ -2,6 +2,7 @@ import React from "react";
 
 import { Container, PlayerWrapper, Url, Box } from "../styles/SoundcloudStyles";
 import ReactPlayer from "react-player";
+import { MainHeadingThree } from "../globalStyles";
 // import { BeSpotify } from "react-icons/bs";
 // const iconStyle = (Icon) => <Icon size="3rem" color="#0f0f0f" />;
 // iconStyle(BeSpotify);
@@ -12,6 +13,7 @@ const Soundcloud = () => {
       <>
         <Container>
           {/* <Url> */}
+          <MainHeadingThree>Recent works</MainHeadingThree>
           <PlayerWrapper>
             <ReactPlayer
               autoplay

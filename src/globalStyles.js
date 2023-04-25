@@ -81,10 +81,12 @@ export const MainHeadingBis = styled.h1`
 export const MainHeadingThree = styled.h1`
   font-size: clamp(2rem, 3vw, 2rem);
   /* margin-bottom: 2rem; */
-  color: gray;
+  color: black;
   /* width: 100%; */
   letter-spacing: 4px;
   text-align: center;
+  /* text-decoration: underline;
+  text-underline-position: 20px; */
 `;
 
 export const Heading = styled.h2`

@@ -10,6 +10,7 @@ import {
   FormMessage,
   FormButton,
   FormTitle,
+  TextArea,
 } from "../styles/FormStyles";
 import { Container } from "../globalStyles";
 import validateForm from "../data/validateForm";
@@ -34,7 +35,8 @@ const FormContact = () => {
     }
     emailjs
       .sendForm(
-        "service_jrm9xqc",
+        // "service_jrm9xqc",
+        "service_3h13353",
         "template_nelp46j",
         form.current,
         "vRc98fB-F8s0iNWTT"
@@ -118,7 +120,7 @@ const FormContact = () => {
               ))}
               <FormInputRow key={1}>
                 <FormLabel>Message</FormLabel>
-                <FormInput
+                <TextArea
                   type={"message"}
                   placeholder={"Ask us anything"}
                   value={message}

@@ -4,7 +4,7 @@ import { Column, Row } from "../globalStyles";
 
 export const FooterContainer = styled.div`
   background-color: black;
-  padding: 4rem 0 2rem 0;
+  padding: 3rem 0 1rem 0;
 `;
 
 export const FooterWrapper = styled.div`
@@ -53,7 +53,7 @@ export const FooterRow = styled(Row)`
 
 export const FooterGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
   justify-content: center;
   align-items: center;
 `;
@@ -61,7 +61,7 @@ export const FooterGrid = styled.div`
 export const FooterColumn = styled(Column)`
   @media screen and (max-width: 999px) {
     align-items: center;
-    grid-column: 1/-1;
+    /* grid-column: 1/-1; */
   }
 `;
 
@@ -120,7 +120,7 @@ export const FooterLogo = styled(Link)`
 export const SocialIcon = styled.img`
   /* margin-right: 10px;
   width: 40px; */
-  margin-right: 0 0.5rem;
+  margin-right: 0 1.5rem;
   width: 9rem;
 `;
 
@@ -138,6 +138,9 @@ export const FooterRights = styled.div`
 export const FooterSocialIcon = styled.a`
   color: #fff;
   font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const FooterAddress = styled.div`

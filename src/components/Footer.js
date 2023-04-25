@@ -19,7 +19,7 @@ import logo from "../assets/logo-rummel-blanco.png";
 
 function Footer() {
   return (
-    <Section padding="4rem 0 2rem 0">
+    <Section padding="2rem 0 1rem 0">
       <FooterWrapper>
         <FooterGrid justify="space-between">
           <FooterColumn id="footerLogo">
@@ -27,8 +27,12 @@ function Footer() {
               <SocialIcon src={logo} />
             </FooterLogo>
             <FooterAddress>Barcelona, Spain</FooterAddress>
-
-            <Row align="center" margin="auto  0 0 0" gap="1rem">
+            <Row
+              align-items="center"
+              margin="auto  0 0 0"
+              gap="1rem"
+              justify-content={"center"}
+            >
               {footerSocialData.map((social, index) => (
                 <FooterSocialIcon
                   key={index}

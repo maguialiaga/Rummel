@@ -59,20 +59,6 @@ const Content = ({
     <Section inverse={inverse} ref={ref}>
       <Container>
         <ContentRow reverse={reverse}>
-          <ContentColumn
-            initial={initial}
-            transition={{ delay: 0.5, duration: 0.6 }}
-            animate={animation}
-          >
-            <ImgWrapper>
-              <Img
-                src={img}
-                alt={alt}
-                // whileHover={{ rotate: 2, scale: 1.02 }}
-                transition={{ duration: 0.5 }}
-              />
-            </ImgWrapper>
-          </ContentColumn>
           <ContentColumn>
             <TextWrapper>
               <Heading
@@ -82,7 +68,7 @@ const Content = ({
                 inverse={inverse}
               >
                 {/* {headline} */}
-                How to prepare your stems :
+                How to prepare your stems:
               </Heading>
               {topics.map((list) =>
                 list.text.map((t) => (
@@ -110,10 +96,25 @@ const Content = ({
                 transition={{ delay: 1, duration: 0.6 }}
                 animate={animation}
                 primary={primary}
+                // onClick={scrollTo(0, 0)}
               >
                 Send your link here
               </ContentButton>
             </TextWrapper>
+          </ContentColumn>
+          <ContentColumn
+            initial={initial}
+            transition={{ delay: 0.5, duration: 0.6 }}
+            animate={animation}
+          >
+            <ImgWrapper>
+              <Img
+                src={img}
+                alt={alt}
+                // whileHover={{ rotate: 2, scale: 1.02 }}
+                transition={{ duration: 0.5 }}
+              />
+            </ImgWrapper>
           </ContentColumn>
         </ContentRow>
       </Container>

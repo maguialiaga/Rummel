@@ -19,7 +19,7 @@ export const PlayerWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 150px;
+  padding-top: 40px;
   padding-bottom: 150px;
   /* flex-wrap: wrap; */
   border: 20px;

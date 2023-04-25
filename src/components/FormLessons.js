@@ -10,6 +10,7 @@ import {
   FormMessage,
   FormButton,
   FormTitle,
+  TextArea,
 } from "../styles/FormStyles";
 import { Container } from "../globalStyles";
 import validateForm from "../data/validateForm";
@@ -33,7 +34,8 @@ const FormLessons = () => {
     }
     emailjs
       .sendForm(
-        "service_jrm9xqc",
+        // "service_jrm9xqc",
+        "service_3h13353",
         "template_nelp46j",
         form.current,
         "vRc98fB-F8s0iNWTT"
@@ -73,13 +75,13 @@ const FormLessons = () => {
       type: "email",
       name: "user_email",
     },
-    {
-      label: "Message",
-      value: message,
-      onChange: (e) => setMessage(e.target.value),
-      type: "message",
-      name: "message",
-    },
+    // {
+    //   label: "Message",
+    //   value: message,
+    // onChange: (e) => setMessage(e.target.value),
+    //   type: "message",
+    //   name: "message",
+    // },
   ];
   return (
     <FormSection>
@@ -101,7 +103,17 @@ const FormLessons = () => {
                   />
                 </FormInputRow>
               ))}
-
+              <FormInputRow>
+                <FormLabel>Message</FormLabel>
+                <TextArea
+                  type={"message"}
+                  placeholder={"Enter your message"}
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  name={"message"}
+                  autoComplete="off"
+                />
+              </FormInputRow>
               <FormButton type="submit">Get your quote</FormButton>
             </FormWrapper>
             {error && (

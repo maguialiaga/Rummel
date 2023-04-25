@@ -10,7 +10,7 @@ export const HeroSection = styled.section`
 `;
 
 export const HeroSection2 = styled.section`
-  height: 80vh;
+  height: 90vh;
   background-position: center;
   background-size: cover;
   padding-top: clamp(70px, 25vh, 220px);

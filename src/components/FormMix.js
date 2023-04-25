@@ -10,9 +10,13 @@ import {
   FormMessage,
   FormButton,
   FormTitle,
+  FormSelect,
+  Options,
+  FormInputMsg,
+  TextArea,
 } from "../styles/FormStyles";
 import { Container } from "../globalStyles";
-import validateForm from "../data/validateForm";
+import validateFormMix from "../data/validateFormMix";
 import emailjs from "@emailjs/browser";
 
 const FormMix = () => {
@@ -20,13 +24,14 @@ const FormMix = () => {
   const [email, setEmail] = useState("");
   const [link, setLink] = useState("");
   const [message, setMessage] = useState("");
+  const [option, setOption] = useState("");
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
   const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const resultError = validateForm({ name, email });
+    const resultError = validateFormMix({ name, email, link, option });
 
     if (resultError !== null) {
       setError(resultError);
@@ -34,7 +39,8 @@ const FormMix = () => {
     }
     emailjs
       .sendForm(
-        "service_jrm9xqc",
+        // "service_jrm9xqc",
+        "service_3h13353",
         "template_6e5i939",
         form.current,
         "vRc98fB-F8s0iNWTT"
@@ -51,6 +57,7 @@ const FormMix = () => {
     setEmail("");
     setLink("");
     setMessage("");
+    setOption("");
     setError(null);
     setSuccess("Email was sent!");
   };
@@ -95,6 +102,7 @@ const FormMix = () => {
     //   name: "message",
     // },
   ];
+
   return (
     <FormSection>
       <Container>
@@ -118,7 +126,7 @@ const FormMix = () => {
               <FormInputRow key={2}>
                 <FormLabel>Link*</FormLabel>
                 <FormInput
-                  type={"url"}
+                  type={"URL"}
                   placeholder={
                     "Enter your Link (Upload your stems to Google Drive, Dropbox or We transfer"
                   }
@@ -130,7 +138,7 @@ const FormMix = () => {
               </FormInputRow>
               <FormInputRow key={3}>
                 <FormLabel>Message</FormLabel>
-                <FormInput
+                <TextArea
                   type={"message"}
                   placeholder={"Enter your message"}
                   value={message}
@@ -139,8 +147,27 @@ const FormMix = () => {
                   autoComplete="off"
                 />
               </FormInputRow>
+              <FormInputRow key={4}>
+                {/* <FormLabel>Choose your request</FormLabel> */}
+                {/* <FormLabel>Choose an option</FormLabel> */}
+                <FormSelect
+                  type={"select"}
+                  name={"user_option"}
+                  onChange={(e) => setOption(e.target.value)}
+                >
+                  <option value={"Choose"}> Choose an option* </option>
+                  <option value={"Mixdown"}>Mixdown</option>
+                  <option value={"Mixdown & Digital Master"}>
+                    Mixdown & Digital Master
+                  </option>
+                  <option value={"Mixing and Analog"}>
+                    Mixing and Analog Master
+                  </option>
+                </FormSelect>
+              </FormInputRow>
               <FormButton type="submit">Send</FormButton>
             </FormWrapper>
+
             {error && (
               <FormMessage
                 variants={messageVariants}

@@ -86,6 +86,41 @@ export const FormInput = styled.input`
   border-bottom: 1px solid #cfcfcf;
   font-size: 1rem;
 `;
+export const TextArea = styled.textarea`
+  display: block;
+  padding-left: 10px;
+  outline: none;
+  border-radius: 2px;
+  height: 150px;
+  width: 100%;
+  /* border: none;
+  border-bottom: 1px solid #cfcfcf; */
+  border: 1px solid #cfcfcf;
+  font-size: 1rem;
+`;
+
+export const FormSelect = styled.select`
+  display: block;
+  padding-left: 10px;
+  outline: none;
+  border-radius: 2px;
+  height: 40px;
+  width: 100%;
+  border: 1px solid #cfcfcf;
+  /* border-bottom: 1px solid #cfcfcf; */
+  font-size: 1rem;
+`;
+
+// export const Options = styled.option`
+//   /* display: block;
+//   padding-left: 10px;
+//   outline: none;
+//   border-radius: 2px;
+//   height: 40px;
+//   width: 100%;
+//   border: 1px solid #cfcfcf;
+//   font-size: 1rem; */
+// `;
 
 export const FormLabel = styled.label`
   display: inline-block;
