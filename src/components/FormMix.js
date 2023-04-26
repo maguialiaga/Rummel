@@ -190,12 +190,16 @@ const FormMix = () => {
             )}
           </FormColumn>
         </FormRow>
-      </Container>
-      <Heading>
         <MainHeadingFour>
           Turrnarround of 10 days max. after your payment - 2 Revisions included
         </MainHeadingFour>
-        <MainHeadingFour>Extra revision ---- 15 EUR</MainHeadingFour>
+        <MainHeadingFour>Extra revision 15 EUR</MainHeadingFour>
+      </Container>
+      <Heading>
+        {/* <MainHeadingFour>
+          Turrnarround of 10 days max. after your payment - 2 Revisions included
+        </MainHeadingFour>
+        <MainHeadingFour>Extra revision ---- 15 EUR</MainHeadingFour> */}
       </Heading>
     </FormSection>
   );

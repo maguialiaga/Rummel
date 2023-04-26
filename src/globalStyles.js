@@ -91,6 +91,8 @@ export const MainHeadingThree = styled.h1`
 
 export const MainHeadingFour = styled.h1`
   font-size: clamp(1rem, 1vw, 1rem);
+  margin-right: auto;
+  margin-left: auto;
   color: red;
   width: 100%;
   letter-spacing: 3px;

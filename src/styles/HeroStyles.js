@@ -10,10 +10,10 @@ export const HeroSection = styled.section`
 `;
 
 export const HeroSection2 = styled.section`
-  height: 90vh;
+  height: 70vh;
   background-position: center;
   background-size: cover;
-  padding-top: clamp(70px, 25vh, 220px);
+  padding-top: clamp(70px, 20vh, 100px);
   box-shadow: inset 0 0 0 1000px rgba (0, 0, 0, 0.2);
 `;
 

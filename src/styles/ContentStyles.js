@@ -2,37 +2,37 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { Row } from "../globalStyles";
 
-// export const ContentRow = styled.div`
-//   display: flex;
-//   margin: 0 -15px -15px -15px;
-//   flex-wrap: wrap;
-//   align-items: center;
-//   flex-direction: ${({ reverse }) => (reverse ? "row-reverse" : "row")};
-//   justify-content: space-around;
-//   @media screen and (max-width: 768px) {
-//     flex-direction: column-reverse;
-//   }
-// `;
-
-export const ContentRow = styled(Row)`
+export const ContentRow = styled.div`
+  display: flex;
+  margin: 0 -15px -15px -15px;
   flex-wrap: wrap;
-  @media screen and (max-width: 820px) {
-    > div {
-      width: 20%;
-    }
-    > div:first-child {
-      width: 100%;
-    }
-  }
-  @media screen and (max-width: 420px) {
-    flex-direction: column;
-    align-items: center;
-    * {
-      width: 100%;
-      text-align: center;
-    }
+  align-items: center;
+  flex-direction: ${({ reverse }) => (reverse ? "row-reverse" : "row")};
+  justify-content: space-around;
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
   }
 `;
+
+// export const ContentRow = styled(Row)`
+//   flex-wrap: wrap;
+//   @media screen and (max-width: 820px) {
+//     > div {
+//       width: 20%;
+//     }
+//     > div:first-child {
+//       width: 100%;
+//     }
+//   }
+//   @media screen and (max-width: 420px) {
+//     flex-direction: column;
+//     align-items: center;
+//     * {
+//       width: 100%;
+//       text-align: left;
+//     }
+//   }
+// `;
 
 export const ContentColumn = styled(motion.div)`
   margin-bottom: 15px;
@@ -97,8 +97,9 @@ export const Img = styled(motion.img)`
   max-width: 100%;
   vertical-align: middle;
   display: inline-block;
-  object-fit: cover;
-  max-height: 700px;
+  /* object-fit: cover; */
+  /* max-height: 700px; */
+  max-height: 1000px;
   z-index: 1;
 `;
 
