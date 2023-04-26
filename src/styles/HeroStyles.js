@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Button } from "../globalStyles";
+import { motion } from "framer-motion";
 
 export const HeroSection = styled.section`
   height: 100vh;
@@ -48,7 +49,7 @@ export const HeroText = styled.p`
   color: #fff;
 `;
 
-export const HeroTextBis = styled.p`
+export const HeroTextBis = styled(motion.p)`
   margin-bottom: 35px;
   font-size: clamp(0.9rem, 1.5vw, 1.3rem);
   line-height: 24px;

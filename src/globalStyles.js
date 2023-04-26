@@ -22,7 +22,7 @@ export const Container = styled.div`
   }
 `;
 
-export const NavBarBtn = styled.button`
+export const NavBarBtn = styled(motion.button)`
   border-radius: 4px;
   background: none;
   white-space: nowrap;
@@ -69,7 +69,7 @@ export const MainHeading = styled.h1`
   letter-spacing: 4px;
   text-align: center;
 `;
-export const MainHeadingBis = styled.h1`
+export const MainHeadingBis = styled(motion.h1)`
   font-size: clamp(2.3rem, 6vw, 4.5rem);
   margin-bottom: 2rem;
   color: "black";
@@ -93,7 +93,7 @@ export const MainHeadingFour = styled.h1`
   font-size: clamp(1rem, 1vw, 1rem);
   margin-right: auto;
   margin-left: auto;
-  color: red;
+  color: #626881;
   width: 100%;
   letter-spacing: 3px;
   text-align: center;

@@ -1,29 +1,53 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { useAnimation } from "framer-motion";
 import { Link } from "gatsby";
 import { Container, MainHeadingBis, NavBarBtn } from "../globalStyles";
-// import video from "../assets/hero2.mp4";
-// import pic from "../assets/production.png";
-import {
-  ButtonWrapper,
-  HeroTextBis,
-  HeroSection2,
-  // HeroVideo2,
-} from "../styles/HeroStyles";
+
+import { ButtonWrapper, HeroTextBis, HeroSection2 } from "../styles/HeroStyles";
 
 export default function Hero2() {
+  const initial = { opacity: 0, y: 30 };
+  const animation = useAnimation();
+
+  const { ref, inView } = useInView({ threshold: 0.2 });
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        opacity: 1,
+        y: 0,
+      });
+    }
+  }, [inView, animation]);
   return (
     <>
-      <HeroSection2>
-        {/* <HeroVideo2 src={video} autoPlay muted /> */}
+      <HeroSection2 ref={ref}>
         <Container>
-          <MainHeadingBis>1:1 Production Lessons</MainHeadingBis>
-          <HeroTextBis>
+          <MainHeadingBis
+            initial={initial}
+            transition={{ delay: 0.5, duration: 0.6 }}
+            animate={animation}
+          >
+            1:1 Production Lessons
+          </MainHeadingBis>
+          <HeroTextBis
+            initial={initial}
+            transition={{ delay: 0.7, duration: 0.6 }}
+            animate={animation}
+          >
             Personalized programm to improve your skills for electronic music
             production
           </HeroTextBis>
           <ButtonWrapper>
             <Link to="/courses">
-              <NavBarBtn>Learn More</NavBarBtn>
+              <NavBarBtn
+                initial={initial}
+                transition={{ delay: 0.6, duration: 0.6 }}
+                animate={animation}
+              >
+                Learn More
+              </NavBarBtn>
             </Link>
           </ButtonWrapper>
         </Container>

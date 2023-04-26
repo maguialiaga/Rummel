@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container, Section } from "../globalStyles";
+import { Link } from "gatsby";
 import {
   ContentRow,
   TextWrapper,
@@ -101,7 +102,7 @@ const Content = ({
                 primary={primary}
                 onClick={() =>
                   window.scrollTo({
-                    top: 2000,
+                    top: 1900,
                     behavior: "smooth",
                   })
                 }

@@ -21,6 +21,7 @@ const LayoutStyles = styled.div`
   display: grid;
   grid-template-rows: auto 1fr auto; //esto significa que el navbar va a ocupar el espacio que yo le ponga y el footer lo mismo dentro de esos 100hv, el contenido siempre va a estar envuelto en estos dos y tambien va a tomar al menos 1 fraccion/hole para disponer de ese espacio del medio. El navbar y footer siempre van a estar pegados a los extremos de la pagina
 `;
+
 export default function Layout({ children }) {
   return (
     <>
