@@ -6,6 +6,7 @@ import Soundcloud from "../components/Soundcloud";
 import image1 from "../assets/soundcloud.png";
 import image2 from "../assets/sinestesia.png";
 import image3 from "../assets/kater.png";
+import Spotify from "../components/Spotify";
 
 const images = [image1, image2, image3];
 const links = [
@@ -22,7 +23,8 @@ export default function Home() {
         <Hero2 />
 
         {/* <Carousel images={images} links={links} /> */}
-        <Soundcloud />
+        {/* <Soundcloud /> */}
+        <Spotify />
       </>
     </Layout>
   );

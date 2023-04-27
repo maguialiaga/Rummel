@@ -13,8 +13,7 @@ import {
   ContentColumn,
 } from "../styles/ContentStyles";
 
-// import video from "../assets/hero2.mp4";
-import img from "../assets/production.jpg";
+import img from "../assets/prod.png";
 
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";

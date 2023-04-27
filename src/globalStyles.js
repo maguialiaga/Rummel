@@ -78,9 +78,9 @@ export const MainHeadingBis = styled(motion.h1)`
   text-align: center;
 `;
 
-export const MainHeadingThree = styled.h1`
+export const MainHeadingThree = styled(motion.h1)`
   font-size: clamp(2rem, 3vw, 2rem);
-  /* margin-bottom: 2rem; */
+  margin-bottom: 2rem;
   color: black;
   /* width: 100%; */
   letter-spacing: 4px;

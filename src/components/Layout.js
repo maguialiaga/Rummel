@@ -37,3 +37,5 @@ export default function Layout({ children }) {
     </>
   );
 }
+
+// hacer un condicional si el video no se carga, entonces q me muestre el componente <PreLoader> sino que me muestre la pag entera

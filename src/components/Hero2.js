@@ -33,7 +33,7 @@ export default function Hero2() {
           </MainHeadingBis>
           <HeroTextBis
             initial={initial}
-            transition={{ delay: 0.7, duration: 0.6 }}
+            transition={{ delay: 0.5, duration: 0.6 }}
             animate={animation}
           >
             Personalized programm to improve your skills for electronic music

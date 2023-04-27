@@ -32,14 +32,18 @@ export const PlayerWrapper = styled.div`
 `;
 
 export const Url = styled.iframe`
-  max-width: 100%;
+  /* max-width: 100%; */
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 450;
+  /* height: 450;
   width: 100%;
-  height: auto;
-  padding: 0 50px;
+  height: auto; */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 100px;
+  padding-bottom: 90px;
+  border: 0;
 `;
 
 export const Container = styled.div`
