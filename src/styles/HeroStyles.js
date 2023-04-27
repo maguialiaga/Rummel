@@ -14,8 +14,11 @@ export const HeroSection2 = styled.section`
   height: 70vh;
   background-position: center;
   background-size: cover;
-  padding-top: clamp(70px, 20vh, 100px);
+  padding-top: clamp(70px, 25vh, 220px);
   box-shadow: inset 0 0 0 1000px rgba (0, 0, 0, 0.2);
+  @media screen and (max-width: 768px) {
+    padding-top: 80px;
+  }
 `;
 
 export const HeroVideo1 = styled.video`

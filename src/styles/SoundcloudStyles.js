@@ -26,10 +26,10 @@ export const PlayerWrapper = styled.div`
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
-  /* border-radius: 20px; */
-  /* padding: 16px 18px; */
-  /* background: black; */
 `;
+/* border-radius: 20px; */
+/* padding: 16px 18px; */
+/* background: black; */
 
 export const Url = styled.iframe`
   /* max-width: 100%; */
@@ -44,11 +44,17 @@ export const Url = styled.iframe`
   padding: 0 100px;
   padding-bottom: 90px;
   border: 0;
+  @media screen and (max-width: 768px) {
+    padding: 40px;
+  }
 `;
 
 export const Container = styled.div`
   position: relative;
-  padding-top: 0;
+  padding-top: 80px;
+  @media screen and (max-width: 768px) {
+    padding-top: 0px;
+  }
 `;
 // export const Box = styled.div`
 //   position: absolute;
