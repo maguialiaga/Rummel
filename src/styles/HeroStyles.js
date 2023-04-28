@@ -3,7 +3,7 @@ import { Button } from "../globalStyles";
 import { motion } from "framer-motion";
 
 export const HeroSection = styled.section`
-  height: 100vh;
+  height: 90vh;
   background-position: center;
   background-size: cover;
   padding-top: clamp(70px, 25vh, 220px);
