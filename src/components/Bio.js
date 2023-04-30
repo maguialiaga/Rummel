@@ -17,10 +17,10 @@ const Bio = () => {
             <ContentColumn>
               <ImgWrapper>
                 <Img
-                  src={img}
-                  alt={alt}
-                  // whileHover={{ rotate: 2, scale: 1.02 }}
-                  transition={{ duration: 0.5 }}
+                // src={img}
+                // alt={alt}
+                // // whileHover={{ rotate: 2, scale: 1.02 }}
+                // transition={{ duration: 0.5 }}
                 ></Img>
               </ImgWrapper>
             </ContentColumn>
