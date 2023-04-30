@@ -1,12 +1,13 @@
 import React from "react";
 import Layout from "../components/Layout";
+import Bio from "../components/Bio";
 
 export default function About() {
   return (
     <Layout>
-      <div>
-        <p>About Us Page</p>
-      </div>
+      <>
+        <Bio />
+      </>
     </Layout>
   );
 }

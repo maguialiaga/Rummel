@@ -13,7 +13,7 @@ import {
   ContentColumn,
 } from "../styles/ContentStyles";
 
-import img from "../assets/prod.png";
+import img from "../assets/prod2.png";
 
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
