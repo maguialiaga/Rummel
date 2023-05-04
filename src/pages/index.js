@@ -3,6 +3,10 @@ import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import Hero2 from "../components/Hero2";
 import Spotify from "../components/Spotify";
+import { useState, useEffect } from "react";
+import PreLoader from "./PreLoader";
+import { motion } from "framer-motion";
+
 // import Soundcloud from "../components/Soundcloud";
 // import image1 from "../assets/soundcloud.png";
 // import image2 from "../assets/sinestesia.png";
@@ -15,17 +19,31 @@ import Spotify from "../components/Spotify";
 //   "https://soundcloud.com/gespona/gespona-katerblau-kiosk-id-06082022",
 // ];
 
-export default function Home() {
-  return (
-    <Layout>
-      <>
-        <Hero />
-        <Hero2 />
+// const transition = { duration: 1, ease: "easeInOut", delay: 0.8 };
 
-        {/* <Carousel images={images} links={links} /> */}
-        {/* <Soundcloud /> */}
-        <Spotify />
-      </>
-    </Layout>
+export default function Home() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2500);
+  }, []);
+
+  return (
+    <>
+      {loading ? (
+        <PreLoader />
+      ) : (
+        <Layout>
+          <Hero />
+          <Hero2 />
+
+          {/* <Carousel images={images} links={links} /> */}
+          {/* <Soundcloud /> */}
+          <Spotify />
+        </Layout>
+      )}
+    </>
   );
 }
