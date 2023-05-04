@@ -18,6 +18,7 @@ export const HeroSection2 = styled.section`
   box-shadow: inset 0 0 0 1000px rgba (0, 0, 0, 0.2);
   @media screen and (max-width: 768px) {
     padding-top: 80px;
+    padding-bottom: 10px;
   }
 `;
 

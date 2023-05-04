@@ -10,8 +10,6 @@ import {
   Subtitle2,
   ImgWrapper,
   ContentColumn,
-  // Img,
-  // TopLine,
 } from "../styles/ContentStyles";
 
 //import img from "../assets/production.jpg";
@@ -25,7 +23,7 @@ const topics = [
     text: [
       "-Export your audio stems in WAV/AIFF files 24BITS/44.1KHz.",
       "-Keep every process you have applied to your stems ON (EQ, compression, FX, etc.) and your master bus clear of any process.",
-      "-Leave the maximum peak at -3dB and check that there is no clipping.",
+      "-Check that there's no clipping.",
       "-Please send your Pre-mastered version, this may help as guide:",
     ],
   },
@@ -45,10 +43,6 @@ const Content = () => {
       });
     }
   }, [inView, animation]);
-
-  // const handleClick = () => {
-  //   ref.current?.scrollIntoView({ behavior: "smooth " });
-  // };
 
   return (
     <Section ref={ref}>

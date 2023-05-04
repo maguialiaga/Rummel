@@ -6,6 +6,9 @@ export const FormSection = styled.div`
   padding: 160px 0;
   /* background: ${({ inverse }) => (inverse ? "#101522" : "#fff")}; */
   background: white;
+  @media screen and (max-width: 768px) {
+    padding: 50px 0;
+  }
 `;
 
 export const FormTitle = styled.h1`

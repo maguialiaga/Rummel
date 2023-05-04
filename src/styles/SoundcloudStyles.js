@@ -52,8 +52,10 @@ export const Url = styled.iframe`
 export const Container = styled.div`
   position: relative;
   padding-top: 80px;
+  padding-bottom: 50px;
   @media screen and (max-width: 768px) {
     padding-top: 0px;
+    padding-bottom: 50px;
   }
 `;
 // export const Box = styled.div`

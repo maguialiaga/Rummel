@@ -16,9 +16,7 @@ export default function Hero() {
         <HeroVideo1 src={video} autoPlay loop muted playsInline />
         <Container>
           <MainHeading>Mix & Mastering</MainHeading>
-          <HeroText>
-            We take care of your music to make it sound at a professional level
-          </HeroText>
+          <HeroText>Make your music sound professional</HeroText>
           <ButtonWrapper>
             <Link to="/mix&master">
               <Button>Get Started</Button>
