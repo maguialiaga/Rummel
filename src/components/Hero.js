@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { Container, MainHeading, Button } from "../globalStyles";
-import video from "../assets/hero.mp4";
+import video from "../assets/videos/hero.mp4";
 import {
   HeroVideo1,
   HeroSection,
@@ -13,7 +13,7 @@ export default function Hero() {
   return (
     <>
       <HeroSection>
-        <HeroVideo1 src={video} autoPlay loop muted />
+        <HeroVideo1 src={video} autoPlay loop muted playsInline />
         <Container>
           <MainHeading>Mix & Mastering</MainHeading>
           <HeroText>

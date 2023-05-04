@@ -5,7 +5,7 @@ import React from "react";
 // import { AiOutlineCloudUpload } from "react-icons/ai";
 // import { CgLoadbarSound } from "react-icons/cg";
 // import { BsSoundwave } from "react-icons/bs";
-const iconStyle = (Icon) => <Icon size="3rem" color="#0f0f0f" />;
+// const iconStyle = (Icon) => <Icon size="3rem" color="#0f0f0f" />;
 
 export const featuresData = [
   {

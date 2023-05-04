@@ -5,15 +5,18 @@ import {
   TextWrapper,
   TopLine,
   Heading,
-  // ContentButton,
   Subtitle,
   Subtitle2,
   ImgWrapper,
-  Img,
   ContentColumn,
+  // ContentButton,
+  // Img,
 } from "../styles/ContentStyles";
 
-import img from "../assets/prod2.png";
+import { StaticImage } from "gatsby-plugin-image";
+// import img from "../assets/prod2.png";
+// import { graphql } from "gatsby";
+// import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
@@ -32,17 +35,7 @@ const topics = [
   },
 ];
 
-const Content = ({
-  primary,
-  // topLine,
-  // headline,
-  // description,
-  // buttonLabel,
-  // img,
-  alt,
-  inverse,
-  reverse,
-}) => {
+const Content = () => {
   const initial = { opacity: 0, y: 30 };
   const animation = useAnimation();
 
@@ -58,9 +51,9 @@ const Content = ({
   }, [inView, animation]);
 
   return (
-    <Section inverse={inverse} ref={ref}>
+    <Section ref={ref}>
       <Container>
-        <ContentRow reverse={reverse}>
+        <ContentRow>
           <ContentColumn>
             <TextWrapper>
               <TopLine
@@ -75,7 +68,6 @@ const Content = ({
                 initial={initial}
                 transition={{ delay: 0.5, duration: 0.6 }}
                 animate={animation}
-                inverse={inverse}
               >
                 {/* {headline} */}
                 Production Lessons
@@ -84,7 +76,6 @@ const Content = ({
                 initial={initial}
                 transition={{ delay: 0.7, duration: 0.6 }}
                 animate={animation}
-                inverse={inverse}
               >
                 We offer personalized 1:1 presential / remote lessons that cover
                 the whole process behind electronic music production. Some
@@ -115,11 +106,16 @@ const Content = ({
             animate={animation}
           >
             <ImgWrapper>
-              <Img
+              {/* <Img
                 src={img}
                 alt={alt}
                 // whileHover={{ rotate: 2, scale: 1.02 }}
                 transition={{ duration: 0.5 }}
+              /> */}
+              <StaticImage
+                src="../images/prod.jpg"
+                width={500}
+                alt="Prod Lessons"
               />
             </ImgWrapper>
           </ContentColumn>
@@ -143,3 +139,22 @@ const Content = ({
 //}
 
 export default Content;
+
+// export const pageQuery = graphql`
+//   query {
+//     file(relativePath: { eq: "prod.jpg" }) {
+//       id
+//       childImageSharp {
+//         gatsbyImageData(
+//           width: 100
+//           quality: 50
+//           webpOptions: { quality: 70 }
+//           placeholder: BLURRED
+//           aspectRatio: 0.7
+//           blurredOptions: { width: 100 }
+//           transformOptions: { cropFocus: CENTER }
+//         )
+//       }
+//     }
+//   }
+// `;

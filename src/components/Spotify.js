@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
-import { useAnimation } from "framer-motion";
+import React from "react";
+// import { useInView } from "react-intersection-observer";
+// import { useAnimation } from "framer-motion";
 import { Container, Url } from "../styles/SoundcloudStyles";
 import { MainHeadingThree } from "../globalStyles";
 
@@ -14,7 +14,7 @@ const Spotify = () => {
           width="100%"
           height="500"
           frameBorder="0"
-          // allowfullscreen=""
+          // allowfullscreen
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
         ></Url>
@@ -26,8 +26,8 @@ const Spotify = () => {
 export default Spotify;
 
 //SPOTIFY
-{
-  /* <iframe
+
+/* <iframe
   style="border-radius:12px"
   src="https://open.spotify.com/embed/album/7lJ2Vt8Owu00RSEizBKS1X?utm_source=generator&theme=0"
   width="100%"
@@ -37,9 +37,8 @@ export default Spotify;
   allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
   loading="lazy"
 ></iframe>; */
-}
 
-<iframe
+/* <iframe
   style="border-radius:12px"
   src="https://open.spotify.com/embed/playlist/1YA2MBpi7VM5mD7uWRU9HX?utm_source=generator"
   width="100%"
@@ -48,4 +47,4 @@ export default Spotify;
   allowfullscreen=""
   allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
   loading="lazy"
-></iframe>;
+></iframe>; */

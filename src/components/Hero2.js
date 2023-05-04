@@ -26,14 +26,14 @@ export default function Hero2() {
         <Container>
           <MainHeadingBis
             initial={initial}
-            transition={{ delay: 0.5, duration: 0.6 }}
+            transition={{ delay: 0.3, duration: 0.6 }}
             animate={animation}
           >
             1:1 Production Lessons
           </MainHeadingBis>
           <HeroTextBis
             initial={initial}
-            transition={{ delay: 0.5, duration: 0.6 }}
+            transition={{ delay: 0.3, duration: 0.6 }}
             animate={animation}
           >
             Personalized programm to improve your skills for electronic music

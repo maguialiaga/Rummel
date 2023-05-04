@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { Row } from "../globalStyles";
 
 export const ContentRow = styled.div`
   display: flex;

@@ -1,20 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Container, Section } from "../globalStyles";
-import { Link } from "gatsby";
+
 import {
   ContentRow,
   TextWrapper,
-  TopLine,
   Heading,
   ContentButton,
   Subtitle,
   Subtitle2,
   ImgWrapper,
-  Img,
   ContentColumn,
+  // Img,
+  // TopLine,
 } from "../styles/ContentStyles";
 
-import img from "../assets/production.jpg";
+//import img from "../assets/production.jpg";
+import { StaticImage } from "gatsby-plugin-image";
 
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
@@ -30,17 +31,7 @@ const topics = [
   },
 ];
 
-const Content = ({
-  primary,
-  // topLine,
-  // headline,
-  // description,
-  // buttonLabel,
-  // img,
-  alt,
-  inverse,
-  reverse,
-}) => {
+const Content = () => {
   const initial = { opacity: 0, y: 30 };
   const animation = useAnimation();
 
@@ -60,16 +51,15 @@ const Content = ({
   // };
 
   return (
-    <Section inverse={inverse} ref={ref}>
+    <Section ref={ref}>
       <Container>
-        <ContentRow reverse={reverse}>
+        <ContentRow>
           <ContentColumn>
             <TextWrapper>
               <Heading
                 initial={initial}
                 transition={{ delay: 0.5, duration: 0.6 }}
                 animate={animation}
-                inverse={inverse}
               >
                 {/* {headline} */}
                 How to prepare your stems:
@@ -99,7 +89,6 @@ const Content = ({
                 initial={initial}
                 transition={{ delay: 1, duration: 0.6 }}
                 animate={animation}
-                primary={primary}
                 onClick={() =>
                   window.scrollTo({
                     top: 1900,
@@ -118,11 +107,16 @@ const Content = ({
             animate={animation}
           >
             <ImgWrapper>
-              <Img
+              {/* <Img
                 src={img}
                 alt={alt}
                 // whileHover={{ rotate: 2, scale: 1.02 }}
                 transition={{ duration: 0.5 }}
+              /> */}
+              <StaticImage
+                src="../images/mixmaster.jpg"
+                width={500}
+                alt="Mix and master"
               />
             </ImgWrapper>
           </ContentColumn>

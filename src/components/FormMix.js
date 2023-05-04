@@ -1,4 +1,4 @@
-import React, { forwardRef, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import {
   FormColumn,
   FormWrapper,
@@ -11,9 +11,9 @@ import {
   FormButton,
   FormTitle,
   FormSelect,
-  Options,
-  FormInputMsg,
   TextArea,
+  // Options,
+  // FormInputMsg,
 } from "../styles/FormStyles";
 import { Container, Heading, MainHeadingFour } from "../globalStyles";
 import validateFormMix from "../data/validateFormMix";
