@@ -114,7 +114,7 @@ const Content = () => {
                 transition={{ duration: 0.5 }}
               /> */}
               <StaticImage
-                src="../images/mixmaster.jpg"
+                src="../assets/images/mixmaster.jpg"
                 width={500}
                 alt="Mix and master"
               />

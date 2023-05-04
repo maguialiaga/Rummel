@@ -113,7 +113,7 @@ const Content = () => {
                 transition={{ duration: 0.5 }}
               /> */}
               <StaticImage
-                src="../images/prod.jpg"
+                src="../assets/images/prod.jpg"
                 width={500}
                 alt="Prod Lessons"
               />
