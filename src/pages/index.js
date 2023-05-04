@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import Hero2 from "../components/Hero2";
 import Spotify from "../components/Spotify";
-import PreLoader from "../components/preloader";
+import PreLoader from "../components/PreLoader";
 import { useState, useEffect } from "react";
 
 // import { motion } from "framer-motion";
