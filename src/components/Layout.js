@@ -2,9 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "./Footer";
 import GlobalStyle from "../globalStyles"; // traigo los estilos globales que van a poder acceder todos
-
 import styled, { ThemeProvider } from "styled-components";
-import PreLoader from "../pages/PreLoader";
 
 const theme = {
   color: {

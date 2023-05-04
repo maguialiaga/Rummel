@@ -4,8 +4,9 @@ import Hero from "../components/Hero";
 import Hero2 from "../components/Hero2";
 import Spotify from "../components/Spotify";
 import { useState, useEffect } from "react";
-import PreLoader from "./preloader";
-import { motion } from "framer-motion";
+import PreLoader from "../components/preloader";
+
+// import { motion } from "framer-motion";
 
 // import Soundcloud from "../components/Soundcloud";
 // import image1 from "../assets/soundcloud.png";

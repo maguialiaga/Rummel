@@ -36,10 +36,6 @@ const Img = styled.img`
 `;
 
 export default function PreLoader() {
-  // useEffect(() => {
-  //   preLoaderAnim
-  // }, [])
-
   return (
     <Container>
       <ImgContainer>
