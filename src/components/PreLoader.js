@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import styled, { keyframes } from "styled-components";
+import React from "react";
+import styled from "styled-components";
 import logo from "../assets/logo-rummel-blanco.png";
 import "animate.css";
 
