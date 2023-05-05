@@ -127,9 +127,7 @@ const FormMix = () => {
                 <FormLabel>Link*</FormLabel>
                 <FormInput
                   type={"URL"}
-                  placeholder={
-                    "Enter your Link (Upload your stems to Google Drive, Dropbox or We transfer)"
-                  }
+                  placeholder={"Enter your Link (Upload your stems)"}
                   value={link}
                   onChange={(e) => setLink(e.target.value)}
                   name={"user_link"}
@@ -147,11 +145,8 @@ const FormMix = () => {
                 >
                   <option value={"Choose"}>Choose an option*</option>
                   <option value={"Mixdown"}>Mixdown</option>
-                  <option value={"Mixdown & Digital Master"}>
-                    Mixdown & Digital Master
-                  </option>
-                  <option value={"Mixing and Analog"}>
-                    Mixing and Analog Master
+                  <option value={"Mixdown & Mastering"}>
+                    Mixdown & Mastering
                   </option>
                 </FormSelect>
               </FormInputRow>

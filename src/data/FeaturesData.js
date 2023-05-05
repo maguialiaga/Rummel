@@ -19,7 +19,7 @@ export const featuresData = [
     imgClass: "one",
   },
   {
-    name: "Mixdown & Digital Master",
+    name: "Mixdown & Mastering",
     description: [
       "Up to 15 stems -------- 85 EUR",
       "16 to 30 stems -------- 100 EUR",
@@ -27,16 +27,6 @@ export const featuresData = [
       "+ than 45 stems -------- 150 EUR",
     ],
     imgClass: "two",
-  },
-  {
-    name: "Mixing and Analog Master",
-    description: [
-      "Up to 15 stems -------- 125 EUR",
-      "16 to 30 stems -------- 140 EUR",
-      "30 to 45 stems -------- 160 EUR",
-      "+ than 45 stems -------- 190 EUR",
-    ],
-    imgClass: "three",
   },
 ];
 

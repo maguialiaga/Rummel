@@ -17,9 +17,9 @@ export const FeatureTextWrapper = styled.div`
 
 export const FeatureWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   margin-top: 3rem;
-  grid-gap: 2rem;
+  grid-gap: 6rem;
   @media screen and (max-width: 1100px) {
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 3rem;
@@ -35,7 +35,7 @@ export const FeatureColumn = styled(motion.div)`
   justify-content: center;
   align-items: center;
   background: #f3f3f3;
-  padding: 10px;
+  padding: 50px;
   /* box-shadow: 0 20px 30px rgb(0, 0, 0, 0.15); */
   border-radius: 20px;
 `;

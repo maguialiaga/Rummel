@@ -58,11 +58,11 @@ export const TextWrapper = styled.div`
     padding-bottom: 65px;
     > h1,
     p {
-      text-align: center;
+      text-align: left;
     }
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
   }
   > img {
     width: 300px;
@@ -109,12 +109,12 @@ export const Heading = styled(motion.h2)`
   font-weight: 600;
   color: ${({ inverse }) => (inverse ? "#0c4577" : "white")};
   @media screen and (max-width: 768px) {
-    text-align: center;
+    text-align: left;
   }
 `;
 
 export const Subtitle = styled(motion.p)`
-  max-width: 440px;
+  /* max-width: 440px; */
   margin-bottom: 35px;
   line-height: 24px;
   color: ${({ inverse }) => (inverse ? "#6a6a6a" : "white")};
@@ -125,7 +125,6 @@ export const Subtitle2 = styled(motion.p)`
   margin-bottom: 5px;
   line-height: 24px;
   font-weight: 500;
-
   color: ${({ inverse }) => (inverse ? "#6a6a6a" : "white")};
 `;
 
