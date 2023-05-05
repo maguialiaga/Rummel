@@ -24,7 +24,7 @@ import { useAnimation } from "framer-motion";
 const topics = [
   {
     text: [
-      "Abelton use",
+      "Ableton use",
       "Music Composition",
       "Sound Design",
       "Arrengment",
