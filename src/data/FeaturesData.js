@@ -1,5 +1,3 @@
-import React from "react";
-
 // import { FiMusic, FiPlay, FiRepeat, FiLink2 } from "react-icons/fi";
 // import { IoIosOptions } from "react-icons/io";
 // import { AiOutlineCloudUpload } from "react-icons/ai";
