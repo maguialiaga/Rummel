@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { Container, MainHeading, Button } from "../globalStyles";
+
 import video from "../assets/videos/hero.mp4";
 import {
   HeroVideo1,

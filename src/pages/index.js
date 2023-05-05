@@ -5,6 +5,7 @@ import Hero2 from "../components/Hero2";
 import Spotify from "../components/Spotify";
 import PreLoader from "../components/PreLoader";
 import { useState, useEffect } from "react";
+import video from "../assets/videos/hero.mp4";
 
 // import { motion } from "framer-motion";
 
@@ -28,7 +29,7 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2500);
+    }, 2000);
   }, []);
 
   return (

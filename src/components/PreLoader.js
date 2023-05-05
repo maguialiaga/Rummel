@@ -31,7 +31,7 @@ const Img = styled.img`
   width: 12rem;
   z-index: -1;
   animation: flash;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
 `;
 

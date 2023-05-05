@@ -23,6 +23,7 @@ export const ContentRow = styled.div`
   align-items: center;
   flex-direction: ${({ reverse }) => (reverse ? "row-reverse" : "row")};
   justify-content: space-around;
+  background-color: black;
   @media screen and (max-width: 768px) {
     flex-direction: column-reverse;
   }
@@ -38,6 +39,7 @@ export const ContentColumn = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: red;
   @media screen and (max-width: 768px) {
     max-width: 100% !important;
     flex-basis: 100%;
@@ -52,6 +54,7 @@ export const ImgWrapper = styled(motion.div)`
   max-height: 700px;
   justify-content: center;
   position: relative;
+  background-color: blue;
 `;
 
 export const Img = styled(motion.img)`
