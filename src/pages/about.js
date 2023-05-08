@@ -1,13 +1,13 @@
-import React from "react";
-import Layout from "../components/Layout";
-import Bio from "../components/Bio";
+// import React from "react";
+// import Layout from "../components/Layout";
+// import Bio from "../components/Bio";
 
-export default function About() {
-  return (
-    <Layout>
-      <>
-        <Bio />
-      </>
-    </Layout>
-  );
-}
+// export default function About() {
+//   return (
+//     <Layout>
+//       <>
+//         <Bio />
+//       </>
+//     </Layout>
+//   );
+// }
