@@ -25,6 +25,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `@bond-london/gatsby-transformer-video`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

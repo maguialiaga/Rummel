@@ -14,7 +14,14 @@ export default function Hero() {
   return (
     <>
       <HeroSection>
-        <HeroVideo1 src={video} autoPlay loop muted playsInline />
+        <HeroVideo1
+          src={video}
+          autoPlay
+          playsInline
+          loop
+          muted
+          type={"video/mp4"}
+        />
         <Container>
           <MainHeading>Mix & Mastering</MainHeading>
           <HeroText>Make your music sound professional</HeroText>
