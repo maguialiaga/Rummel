@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 // import { Container } from "../globalStyles";
 // import { Link } from "gatsby";
 
@@ -31,7 +32,7 @@ export const PlayerWrapper = styled.div`
 /* padding: 16px 18px; */
 /* background: black; */
 
-export const Url = styled.iframe`
+export const Url = styled(motion.iframe)`
   /* max-width: 100%; */
   display: flex;
   align-items: center;
