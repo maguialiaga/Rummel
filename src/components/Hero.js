@@ -23,7 +23,7 @@ export default function Hero() {
           type={"video/mp4"}
         />
         <Container>
-          <MainHeading>Mastering</MainHeading>
+          <MainHeading>Mix & Mastering</MainHeading>
           <HeroText>Make your music sound professional</HeroText>
           <ButtonWrapper>
             <Link to="/mix&master">
