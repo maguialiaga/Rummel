@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import Hero2 from "../components/Hero2";
 import Spotify from "../components/Spotify";
 import PreLoader from "../components/PreLoader";
+import Seo from "../components/Seo";
 import { useState, useEffect } from "react";
 
 // import { motion } from "framer-motion";
@@ -37,6 +38,7 @@ export default function Home() {
         <PreLoader />
       ) : (
         <Layout>
+          <Seo title="Rummel Audio" />
           <Hero />
           <Hero2 />
 

@@ -8,6 +8,11 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  siteMetadata: {
+    title: ``,
+    description: `Rummel Audio - Mix & Mastering - 1:1 Production Lessons`,
+    author: `Magdalena Aliaga`,
+  },
   plugins: [
     `gatsby-plugin-styled-components`,
 
@@ -25,6 +30,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-react-helmet`,
     `@bond-london/gatsby-transformer-video`,
     {
       resolve: `gatsby-source-filesystem`,
