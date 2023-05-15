@@ -116,6 +116,8 @@ const Content = () => {
                 src="../assets/images/prod.jpg"
                 width={500}
                 alt="Prod Lessons"
+                placeholder="blurred"
+                formats={["AUTO", "WEBP", "AVIF"]}
               />
             </ImgWrapper>
           </ContentColumn>
