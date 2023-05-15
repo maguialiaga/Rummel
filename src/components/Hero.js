@@ -17,7 +17,7 @@ export default function Hero() {
         <HeroVideo1
           src={video}
           autoPlay
-          playsInline
+          playsInLine
           loop
           muted
           type={"video/mp4"}
