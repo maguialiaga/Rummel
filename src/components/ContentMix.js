@@ -111,6 +111,8 @@ const Content = () => {
                 src="../assets/images/mixmaster.jpg"
                 width={500}
                 alt="Mix and master"
+                placeholder="blurred"
+                formats={["AUTO", "WEBP", "AVIF"]}
               />
             </ImgWrapper>
           </ContentColumn>

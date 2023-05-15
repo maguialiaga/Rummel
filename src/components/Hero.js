@@ -21,6 +21,8 @@ export default function Hero() {
           loop
           muted
           type={"video/mp4"}
+          placeholder="blurred"
+          formats={["AUTO", "WEBP", "AVIF"]}
         />
         <Container>
           <MainHeading>Mix & Mastering</MainHeading>
