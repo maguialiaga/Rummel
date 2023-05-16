@@ -14,24 +14,16 @@ export default function Hero() {
   return (
     <>
       <HeroSection>
-        {/* <HeroVideo1
+        <HeroVideo1
           src={video}
+          muted
           autoPlay
           playsInLine
           loop
-          muted
           type={"video/mp4"}
           placeholder="blurred"
           formats={["AUTO", "WEBP", "AVIF"]}
-        /> */}
-        <HeroVideo1 muted autoPlay playsInLine loop>
-          <source
-            src={video}
-            type={"video/mp4"}
-            placeholder="blurred"
-            formats={["AUTO", "WEBP", "AVIF"]}
-          />
-        </HeroVideo1>
+        />
         <Container>
           <MainHeading>Mix & Mastering</MainHeading>
           <HeroText>Make your music sound professional</HeroText>
