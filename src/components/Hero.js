@@ -16,12 +16,11 @@ export default function Hero() {
       <HeroSection>
         <HeroVideo1
           src={video}
-          muted
           autoPlay
+          muted
           playsInLine
           loop
           type={"video/mp4"}
-          placeholder="blurred"
           formats={["AUTO", "WEBP", "AVIF"]}
         />
         <Container>
