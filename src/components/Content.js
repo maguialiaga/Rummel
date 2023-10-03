@@ -14,7 +14,6 @@ import {
 } from "../styles/ContentStyles";
 
 import { StaticImage } from "gatsby-plugin-image";
-// import img from "../assets/prod2.png";
 // import { graphql } from "gatsby";
 // import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
@@ -117,7 +116,7 @@ const Content = () => {
                 width={500}
                 alt="Prod Lessons"
                 placeholder="blurred"
-                formats={["AUTO", "WEBP", "AVIF"]}
+                // formats={["AUTO", "WEBP", "AVIF"]} //esto es lo que no deja mostrar la imagen OJOOO
               />
             </ImgWrapper>
           </ContentColumn>

@@ -47,7 +47,7 @@ export const NavLogo = styled(Link)`
 
 export const NavIcon = styled.img`
   margin-right: 0 0.5rem;
-  width: 7rem;
+  width: 2rem;
 `;
 
 export const MobileIcon = styled.div`

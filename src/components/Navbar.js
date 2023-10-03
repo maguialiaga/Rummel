@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 // import { navigate } from "@reach/router";
 // import { useLocation } from "react-router-dom";
-import logo from "../assets/logo-rummel.png";
+import logo from "../assets/rummel-negro.png";
 import data from "../data/NavBarData";
 import { NavBarBtn } from "../globalStyles";
 import {

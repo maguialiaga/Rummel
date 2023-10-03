@@ -14,7 +14,7 @@ import {
 } from "../styles/FooterStyles";
 import { footerSocialData } from "../data/FooterData";
 import { Row, Section } from "../globalStyles";
-import logo from "../assets/logo-rummel-blanco.png";
+import logo from "../assets/rummel-blanco.png";
 // import { NavIcon, Navlogo } from "../styles/NavBarStyles";
 
 function Footer() {
@@ -29,7 +29,7 @@ function Footer() {
             <FooterAddress>Barcelona, Spain</FooterAddress>
             <Row
               align-items="center"
-              margin="auto  0 0 0"
+              margin="20px  0 0 0"
               gap="1rem"
               justify-content={"center"}
             >

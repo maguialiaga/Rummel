@@ -44,7 +44,7 @@ export const BioColumn = styled(motion.div)`
 //   padding: 30px;
 // `;
 export const BioName = styled.h3`
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.3rem;
   letter-spacing: 2px;
   text-align: center;

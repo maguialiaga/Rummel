@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../assets/logo-rummel-blanco.png";
+import logo from "../assets/rummel-blanco.png";
 import "animate.css";
 
 const Container = styled.div`
@@ -28,7 +28,7 @@ const ImgContainer = styled.div`
 
 const Img = styled.img`
   color: white;
-  width: 12rem;
+  width: 3.5rem;
   z-index: -1;
   animation: flash;
   animation-duration: 4s;

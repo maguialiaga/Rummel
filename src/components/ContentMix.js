@@ -112,7 +112,7 @@ const Content = () => {
                 width={500}
                 alt="Mix and master"
                 placeholder="blurred"
-                formats={["AUTO", "WEBP", "AVIF"]}
+                // formats={["AUTO", "WEBP", "AVIF"]}
               />
             </ImgWrapper>
           </ContentColumn>

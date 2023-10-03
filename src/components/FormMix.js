@@ -25,13 +25,14 @@ const FormMix = () => {
   const [link, setLink] = useState("");
   const [message, setMessage] = useState("");
   const [option, setOption] = useState("");
+  const [mentor, setMentor] = useState("");
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
   const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const resultError = validateFormMix({ name, email, link, option });
+    const resultError = validateFormMix({ name, email, link, option, mentor });
 
     if (resultError !== null) {
       setError(resultError);
@@ -58,6 +59,7 @@ const FormMix = () => {
     setLink("");
     setMessage("");
     setOption("");
+    setMentor("");
     setError(null);
     setSuccess("Email was sent!");
   };
@@ -151,6 +153,21 @@ const FormMix = () => {
                 </FormSelect>
               </FormInputRow>
               <FormInputRow key={4}>
+                {/* <FormLabel>Choose your request</FormLabel> */}
+                {/* <FormLabel>Choose an option</FormLabel> */}
+                <FormSelect
+                  type={"select"}
+                  name={"user_mentor"}
+                  onChange={(e) => setMentor(e.target.value)}
+                >
+                  <option value={"Choose"}>Choose your mentor*</option>
+                  <option value={"No preference"}>No preference</option>
+                  <option value={"Gespona"}>Gespona</option>
+                  <option value={"Djolee"}>Djolee</option>
+                  <option value={"Last men on earth"}>Last men on earth</option>
+                </FormSelect>
+              </FormInputRow>
+              <FormInputRow key={5}>
                 <FormLabel>Message</FormLabel>
                 <TextArea
                   type={"message"}

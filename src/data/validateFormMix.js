@@ -1,4 +1,4 @@
-export default function validateFormMix({ name, email, link, option }) {
+export default function validateFormMix({ name, email, link, option, mentor }) {
   if (!name.trim()) {
     return "Username required";
   }
@@ -15,6 +15,10 @@ export default function validateFormMix({ name, email, link, option }) {
 
   if (option === "Choose" || option === "") {
     return "Choose and option";
+  }
+
+  if (mentor === "Choose" || mentor === "") {
+    return "Choose your mentor";
   }
 
   return null;

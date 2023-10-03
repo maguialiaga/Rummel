@@ -59,7 +59,7 @@ export const FooterGrid = styled.div`
 `;
 
 export const FooterColumn = styled(Column)`
-  @media screen and (max-width: 999px) {
+  @media screen and (max-width: 990px) {
     align-items: center;
     /* grid-column: 1/-1; */
   }
@@ -114,14 +114,14 @@ export const FooterLogo = styled(Link)`
   font-size: 2rem;
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 `;
 
 export const SocialIcon = styled.img`
   /* margin-right: 10px;
   width: 40px; */
   margin-right: 0 1.5rem;
-  width: 9rem;
+  width: 2rem;
 `;
 
 export const FooterRights = styled.div`
@@ -151,7 +151,7 @@ export const FooterAddress = styled.div`
   font-size: 0.875rem;
   line-height: 2;
   text-align: center;
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 990px) {
     margin-left: 0px;
     text-align: left;
     margin-right: 1rem;
