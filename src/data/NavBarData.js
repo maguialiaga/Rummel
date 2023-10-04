@@ -8,11 +8,11 @@ const data = [
     to: "/courses",
     text: "Production Lessons",
   },
-  {
-    to: "/about",
-    text: "About us",
-    id: "about",
-  },
+  // {
+  //   to: "/about",
+  //   text: "About us",
+  //   id: "about",
+  // },
   // {
   //   to: "/contact",
   //   text: "Contact",

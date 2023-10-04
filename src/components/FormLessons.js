@@ -9,6 +9,7 @@ import {
   FormInputRow,
   FormMessage,
   FormButton,
+  FormSelect,
   FormTitle,
   TextArea,
 } from "../styles/FormStyles";
@@ -22,11 +23,12 @@ const FormLessons = () => {
   const [message, setMessage] = useState("");
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
+  const [mentor, setMentor] = useState("");
   const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const resultError = validateForm({ name, email });
+    const resultError = validateForm({ name, email, mentor });
 
     if (resultError !== null) {
       setError(resultError);
@@ -51,6 +53,7 @@ const FormLessons = () => {
     setName("");
     setEmail("");
     setMessage("");
+    setMentor("Choose your mentor");
     setError(null);
     setSuccess("Email was sent!");
   };
@@ -103,6 +106,21 @@ const FormLessons = () => {
                   />
                 </FormInputRow>
               ))}
+              <FormInputRow>
+                {/* <FormLabel>Choose your request</FormLabel> */}
+                {/* <FormLabel>Choose an option</FormLabel> */}
+                <FormSelect
+                  type={"select"}
+                  name={"user_mentor"}
+                  onChange={(e) => setMentor(e.target.value)}
+                >
+                  <option value={"Choose"}>Choose your mentor*</option>
+                  <option value={"No preference"}>No preference</option>
+                  <option value={"Djolee"}>Djolee</option>
+                  <option value={"Gespona"}>Gespona</option>
+                  <option value={"Last men on earth"}>Last men on earth</option>
+                </FormSelect>
+              </FormInputRow>
               <FormInputRow>
                 <FormLabel>Message</FormLabel>
                 <TextArea

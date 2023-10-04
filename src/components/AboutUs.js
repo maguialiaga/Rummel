@@ -21,7 +21,7 @@ const AboutUs = () => {
   };
   return (
     <>
-      <Section smPadding="50px 10px" position="relative" inverse id="about">
+      <Section padding="20px 10px" position="relative" inverse id="about">
         <Container>
           <BioWrapper>
             <BioColumn
@@ -31,14 +31,14 @@ const AboutUs = () => {
               key={0}
             >
               <StaticImage
-                src="../assets/images/gespona.jpg"
+                src="../assets/images/nico.jpg"
                 width={800}
                 height={1000}
                 alt="photos"
               />
               <br></br>
               <br></br>
-              <BioName>{"GESPONA"}</BioName>
+              <BioName>{"DJOLEE"}</BioName>
               <BioText>{"Description"}</BioText>
             </BioColumn>
 
@@ -49,14 +49,31 @@ const AboutUs = () => {
               key={1}
             >
               <StaticImage
-                src="../assets/images/djolee.jpg"
+                src="../assets/images/gon.jpg"
                 width={800}
                 height={1000}
                 alt="photos"
               />
               <br></br>
               <br></br>
-              <BioName>{"DJOLEE"}</BioName>
+              <BioName>{"GESPONA"}</BioName>
+              <BioText>{"Description"}</BioText>
+            </BioColumn>
+            <BioColumn
+              initial={initial}
+              animate={animate}
+              transition={{ duration: 0.7 + 1 * 0.1 }}
+              key={1}
+            >
+              <StaticImage
+                src="../assets/images/lastmen.jpg"
+                width={800}
+                height={1000}
+                alt="photos"
+              />
+              <br></br>
+              <br></br>
+              <BioName>{"LAST MEN ON EARTH"}</BioName>
               <BioText>{"Description"}</BioText>
             </BioColumn>
           </BioWrapper>

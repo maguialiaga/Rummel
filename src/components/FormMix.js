@@ -25,14 +25,20 @@ const FormMix = () => {
   const [link, setLink] = useState("");
   const [message, setMessage] = useState("");
   const [option, setOption] = useState("");
-  const [mentor, setMentor] = useState("");
+  const [engineer, setEngineer] = useState("");
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
   const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const resultError = validateFormMix({ name, email, link, option, mentor });
+    const resultError = validateFormMix({
+      name,
+      email,
+      link,
+      option,
+      engineer,
+    });
 
     if (resultError !== null) {
       setError(resultError);
@@ -58,8 +64,8 @@ const FormMix = () => {
     setEmail("");
     setLink("");
     setMessage("");
-    setOption("");
-    setMentor("");
+    setOption("Choose an option*");
+    setEngineer("Choose your engineer*");
     setError(null);
     setSuccess("Email was sent!");
   };
@@ -150,6 +156,7 @@ const FormMix = () => {
                   <option value={"Mixdown & Mastering"}>
                     Mixdown & Mastering
                   </option>
+                  <option value={"Mastering"}>Mastering</option>
                 </FormSelect>
               </FormInputRow>
               <FormInputRow key={4}>
@@ -157,13 +164,13 @@ const FormMix = () => {
                 {/* <FormLabel>Choose an option</FormLabel> */}
                 <FormSelect
                   type={"select"}
-                  name={"user_mentor"}
-                  onChange={(e) => setMentor(e.target.value)}
+                  name={"user_engineer"}
+                  onChange={(e) => setEngineer(e.target.value)}
                 >
-                  <option value={"Choose"}>Choose your mentor*</option>
+                  <option value={"Choose"}>Choose your engineer*</option>
                   <option value={"No preference"}>No preference</option>
-                  <option value={"Gespona"}>Gespona</option>
                   <option value={"Djolee"}>Djolee</option>
+                  <option value={"Gespona"}>Gespona</option>
                   <option value={"Last men on earth"}>Last men on earth</option>
                 </FormSelect>
               </FormInputRow>

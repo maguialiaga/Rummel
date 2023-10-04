@@ -6,7 +6,7 @@ export const Container = styled.div`
   max-width: 1300px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 50px;
+  padding: 0 30px;
   @media screen and (max-width: 960px) {
     padding: 0 30px;
   }
@@ -14,9 +14,9 @@ export const Container = styled.div`
 
 export const BioWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 3rem;
-  grid-gap: 6rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
+  grid-gap: 2rem;
   @media screen and (max-width: 1100px) {
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 3rem;

@@ -58,9 +58,9 @@ export default function Navbar() {
                   <NavLinks to={el.to}>{el.text}</NavLinks>
                 </NavItem>
               ))}
-              <NavItem key={"contact"}>
-                <NavLinks to="/contact">
-                  <NavBarBtn>Contact</NavBarBtn>
+              <NavItem key={"about"}>
+                <NavLinks to="/about">
+                  <NavBarBtn>About Us</NavBarBtn>
                 </NavLinks>
               </NavItem>
             </NavMenu>

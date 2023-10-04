@@ -1,4 +1,4 @@
-export default function validateForm({ name, email }) {
+export default function validateForm({ name, email, mentor }) {
   if (!name.trim()) {
     return "Username required";
   }
@@ -22,6 +22,10 @@ export default function validateForm({ name, email }) {
     return "Email required";
   } else if (!/\S+@\S+\.\S+/.test(email)) {
     return "Email address is invalid";
+  }
+
+  if (mentor === "Choose" || mentor === "") {
+    return "Choose your mentor";
   }
 
   // if (!confirmPass) {
