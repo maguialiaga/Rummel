@@ -28,7 +28,7 @@ export const featuresData = [
   },
   {
     name: "Mastering",
-    description: ["Stereo Mastering ---- 40 EUR"],
+    description: ["", "Stereo Mastering ---- 40 EUR"],
     imgClass: "three",
   },
 ];

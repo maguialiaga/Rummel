@@ -104,6 +104,7 @@ export const NavItem = styled.li`
 export const NavLinks = styled(Link)`
   color: black;
   display: flex;
+  font-weight: 500;
   align-items: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
@@ -137,57 +138,3 @@ export const NavBtnLink = styled(Link)`
   border: none;
   outline: none;
 `;
-
-//  nav ul {
-//     /* width: 100%;
-//     margin: 0rem;
-//     padding: 0;
-//     list-style-type: none;
-//     display: grid;
-//     grid-template-columns: repeat(4, auto);
-//     align-items: center;
-//     justify-content: space-between;
-//     @media (min-width: 768px) {
-//       grid-template-columns: 1fr repeat(3, auto);
-//     } */
-//     width: 100%;
-//     margin: 0rem;
-//     padding: 0;
-//     align-items: center;
-//     top: 0;
-//     justify-content: space-between;
-//     list-style-type: none;
-//     position: fixed;
-//     background-color: rgb(0, 0, 0, 0.6);
-//     backdrop-filter: blur(8px);
-//     box-shadow: 0 20px 30px rgb(0, 0, 0, 0.15);
-//     display: grid;
-//     grid-template-columns: repeat(4, auto);
-//     @media (min-width: 768px) {
-//       grid-template-columns: 1fr repeat(3, auto);
-//     }
-//   }
-//   nav ul li a {
-//     display: inline-block;
-//     padding: 1rem;
-//     text-decoration: none;
-//     font-family: ${({ theme }) => theme.fonts.body}, sans-serif;
-//     position: relative;
-//     color: white;
-//     ::after {
-//       content: "";
-//       position: absolute;
-//       width: 100%;
-//       transform: scaleX(0);
-//       height: 2px;
-//       bottom: 0;
-//       left: 0;
-//       background-color: white;
-//       transform-origin: bottom right;
-//       transition: transform 0.25s ease-out;
-//     }
-//     :hover::after {
-//       transform: scaleX(1);
-//       transform-origin: bottom left;
-//     }
-//   }

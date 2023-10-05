@@ -22,11 +22,23 @@ export const Container = styled.div`
   }
 `;
 
+export const ContainerBtn = styled.div`
+  width: 100%;
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 10px;
+  @media screen and (max-width: 960px) {
+    padding: 0 30px;
+  }
+`;
+
 export const NavBarBtn = styled(motion.button)`
   border-radius: 4px;
   background: none;
   white-space: nowrap;
   padding: 10px 20px;
+  font-weight: 500;
   font-size: 16px;
   color: black;
   outline: none;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Section } from "../globalStyles";
+import { Section, Row } from "../globalStyles";
 import {
   Container,
   BioWrapper,
@@ -7,7 +7,13 @@ import {
   BioName,
   BioText,
   BioTextBis,
+  BioSocialIcon,
 } from "../styles/BioStyles";
+import {
+  bioSocialDataNico,
+  bioSocialDataGon,
+  bioSocialDataLast,
+} from "../data/AboutData";
 
 import { FeatureTextWrapper, FeatureTitle } from "../styles/FeaturesStyles";
 
@@ -63,6 +69,24 @@ const AboutUs = () => {
                   "Dixon, Ame, Trikk, Mind Against, Oliver Koletzki, Bedouin, Musumeci, Totto Chiavetta"
                 }
               </BioText>
+              <Row
+                align-items="center"
+                margin="20px  0 0 0"
+                gap="1rem"
+                justify-content={"center"}
+              >
+                {bioSocialDataNico.map((social, index) => (
+                  <BioSocialIcon
+                    key={index}
+                    href={social.src}
+                    color="black"
+                    target="_blank"
+                    aria-label={social.name}
+                  >
+                    {social.icon}
+                  </BioSocialIcon>
+                ))}
+              </Row>
             </BioColumn>
 
             <BioColumn
@@ -92,6 +116,24 @@ const AboutUs = () => {
                   "Dixon, Mind Against, Echonomist, Hernan Cattaneo, Oliver Koletzki, Mano le tough, Massano, Trikk"
                 }
               </BioText>
+              <Row
+                align-items="center"
+                margin="20px  0 0 0"
+                gap="1rem"
+                justify-content={"center"}
+              >
+                {bioSocialDataGon.map((social, index) => (
+                  <BioSocialIcon
+                    key={index}
+                    href={social.src}
+                    color="black"
+                    target="_blank"
+                    aria-label={social.name}
+                  >
+                    {social.icon}
+                  </BioSocialIcon>
+                ))}
+              </Row>
             </BioColumn>
             <BioColumn
               initial={initial}
@@ -118,6 +160,24 @@ const AboutUs = () => {
                   "Dixon, Ame, John Digweed, Mind Against, Echonomist, Mano le tough, Trikk"
                 }
               </BioText>
+              <Row
+                align-items="center"
+                margin="20px  0 0 0"
+                gap="1rem"
+                justify-content={"center"}
+              >
+                {bioSocialDataLast.map((social, index) => (
+                  <BioSocialIcon
+                    key={index}
+                    href={social.src}
+                    color="black"
+                    target="_blank"
+                    aria-label={social.name}
+                  >
+                    {social.icon}
+                  </BioSocialIcon>
+                ))}
+              </Row>
             </BioColumn>
           </BioWrapper>
         </Container>

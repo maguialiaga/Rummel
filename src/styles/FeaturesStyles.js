@@ -11,8 +11,8 @@ export const FeatureTitle = styled.h2`
 
 export const FeatureTextWrapper = styled.div`
   position: relative;
-  padding: 0 0 50px;
-  margin-bottom: 2rem;
+  padding: 0 0;
+  /* margin-bottom: 1rem; */
 `;
 
 export const FeatureWrapper = styled.div`

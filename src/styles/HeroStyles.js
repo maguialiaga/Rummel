@@ -21,6 +21,17 @@ export const HeroSection2 = styled.section`
     padding-bottom: 10px;
   }
 `;
+export const HeroSection3 = styled.section`
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  padding-top: clamp(10px, 5vh, 220px);
+  box-shadow: inset 0 0 0 1000px rgba (0, 0, 0, 0.2);
+  @media screen and (max-width: 768px) {
+    padding-top: 70px;
+    padding-bottom: 10px;
+  }
+`;
 
 export const HeroVideo1 = styled.video`
   display: block;
@@ -68,7 +79,10 @@ export const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
   flex-flow: wrap;
-  gap: 0.5rem;
+  gap: 6rem;
+  @media screen and (max-width: 768px) {
+    gap: 0.5rem;
+  }
 `;
 
 export const HeroButton = styled(Button)`

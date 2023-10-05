@@ -99,3 +99,11 @@ export const Img = styled(motion.img)`
   max-height: 1000px;
   z-index: -1;
 `;
+
+export const BioSocialIcon = styled.a`
+  color: black;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
