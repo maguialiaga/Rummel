@@ -25,6 +25,7 @@ const FormMix = () => {
   const [link, setLink] = useState("");
   const [message, setMessage] = useState("");
   const [option, setOption] = useState("");
+
   const [engineer, setEngineer] = useState("");
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
@@ -64,8 +65,8 @@ const FormMix = () => {
     setEmail("");
     setLink("");
     setMessage("");
-    setOption("Choose an option*");
-    setEngineer("Choose your engineer*");
+    setOption("");
+    setEngineer("");
     setError(null);
     setSuccess("Email was sent!");
   };

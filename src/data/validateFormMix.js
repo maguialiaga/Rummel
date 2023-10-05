@@ -6,7 +6,7 @@ export default function validateFormMix({
   engineer,
 }) {
   if (!name.trim()) {
-    return "Username required";
+    return "Name is required";
   }
 
   if (!email) {
@@ -20,7 +20,7 @@ export default function validateFormMix({
   }
 
   if (option === "Choose" || option === "") {
-    return "Choose and option";
+    return "Choose an option";
   }
 
   if (engineer === "Choose" || engineer === "") {

@@ -6,7 +6,10 @@ import {
   BioColumn,
   BioName,
   BioText,
+  BioTextBis,
 } from "../styles/BioStyles";
+
+import { FeatureTextWrapper, FeatureTitle } from "../styles/FeaturesStyles";
 
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -21,8 +24,13 @@ const AboutUs = () => {
   };
   return (
     <>
-      <Section padding="20px 10px" position="relative" inverse id="about">
+      <Section smPadding="80px 10px" position="relative" inverse id="about">
         <Container>
+          <FeatureTextWrapper>
+            <FeatureTitle>About Us</FeatureTitle>
+            {/* <Heading2></Heading2>
+            <Heading2>Budget</Heading2> */}
+          </FeatureTextWrapper>
           <BioWrapper>
             <BioColumn
               initial={initial}
@@ -39,7 +47,22 @@ const AboutUs = () => {
               <br></br>
               <br></br>
               <BioName>{"DJOLEE"}</BioName>
-              <BioText>{"Description"}</BioText>
+              <br></br>
+              <BioTextBis>{"Released on:"}</BioTextBis>
+
+              <BioText>
+                {
+                  "Stil Vor Talent, Rummel, Amancay, Sum Over Histories, Mo Black"
+                }
+              </BioText>
+              <br></br>
+              <BioTextBis>{"Supported by:"}</BioTextBis>
+
+              <BioText>
+                {
+                  "Dixon, Ame, Trikk, Mind Against, Oliver Koletzki, Bedouin, Musumeci, Totto Chiavetta"
+                }
+              </BioText>
             </BioColumn>
 
             <BioColumn
@@ -57,7 +80,18 @@ const AboutUs = () => {
               <br></br>
               <br></br>
               <BioName>{"GESPONA"}</BioName>
-              <BioText>{"Description"}</BioText>
+              <br></br>
+              <BioTextBis>{"Released on:"}</BioTextBis>
+              <BioText>
+                {"Stil Vor Talent, Rummel, Radikon, Multinotes"}
+              </BioText>
+              <br></br>
+              <BioTextBis>{"Supported by"}</BioTextBis>
+              <BioText>
+                {
+                  "Dixon, Mind Against, Echonomist, Hernan Cattaneo, Oliver Koletzki, Mano le tough, Massano, Trikk"
+                }
+              </BioText>
             </BioColumn>
             <BioColumn
               initial={initial}
@@ -74,7 +108,16 @@ const AboutUs = () => {
               <br></br>
               <br></br>
               <BioName>{"LAST MEN ON EARTH"}</BioName>
-              <BioText>{"Description"}</BioText>
+              <br></br>
+              <BioTextBis>{"Released on:"}</BioTextBis>
+              <BioText>{"Applied Magic, Sum Over Histories, Amancay"}</BioText>
+              <br></br>
+              <BioTextBis>{"Supported by:"}</BioTextBis>
+              <BioText>
+                {
+                  "Dixon, Ame, John Digweed, Mind Against, Echonomist, Mano le tough, Trikk"
+                }
+              </BioText>
             </BioColumn>
           </BioWrapper>
         </Container>

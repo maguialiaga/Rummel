@@ -30,7 +30,7 @@ export const BioColumn = styled(motion.div)`
   display: flex;
   flex-flow: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   /* background: #f3f3f3; */
   padding: 50px;
   /* box-shadow: 0 20px 30px rgb(0, 0, 0, 0.15); */
@@ -47,16 +47,29 @@ export const BioName = styled.h3`
   font-weight: 600;
   font-size: 1.3rem;
   letter-spacing: 2px;
-  text-align: center;
+  text-align: left;
   @media screen and (max-width: 768px) {
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1rem;
     letter-spacing: 1.3px;
   }
 `;
+
+export const BioTextBis = styled.p`
+  margin: 0.4rem 0 auto;
+  text-align: left;
+  font-size: 1rem;
+  color: black;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  @media screen and (max-width: 768px) {
+    display: flex;
+  }
+`;
+
 export const BioText = styled.p`
-  margin: 1rem 0 auto;
-  text-align: center;
+  margin: 0.4rem 0 auto;
+  text-align: left;
   font-size: 0.9rem;
   line-height: 1.73;
   letter-spacing: 0.5px;

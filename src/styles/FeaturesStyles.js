@@ -11,17 +11,17 @@ export const FeatureTitle = styled.h2`
 
 export const FeatureTextWrapper = styled.div`
   position: relative;
-  padding: 0 0 10px;
+  padding: 0 0 50px;
   margin-bottom: 2rem;
 `;
 
 export const FeatureWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin-top: 3rem;
-  grid-gap: 6rem;
+  grid-gap: 3rem;
   @media screen and (max-width: 1100px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 3rem;
   }
   @media screen and (max-width: 568px) {

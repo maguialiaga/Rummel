@@ -1,6 +1,6 @@
 export default function validateForm({ name, email, mentor }) {
   if (!name.trim()) {
-    return "Username required";
+    return "Name is required";
   }
   // else if (!/^[A-Za-z]+/.test(name.trim())) {
   //   errors.name = 'Enter a valid name';

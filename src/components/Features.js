@@ -26,7 +26,7 @@ const Features = () => {
         <FeatureTextWrapper>
           <FeatureTitle>Mix & Mastering</FeatureTitle>
           <Heading2></Heading2>
-          <Heading2>Budget</Heading2>
+          <Heading2>Pricing</Heading2>
         </FeatureTextWrapper>
         <FeatureWrapper>
           {featuresData.map((el, index) => (
