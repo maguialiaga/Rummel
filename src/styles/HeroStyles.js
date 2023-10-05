@@ -82,7 +82,7 @@ export const ButtonWrapper = styled.div`
   flex-flow: wrap;
   gap: 6rem;
   @media screen and (max-width: 768px) {
-    gap: 2rem;
+    gap: 4rem;
   }
 `;
 

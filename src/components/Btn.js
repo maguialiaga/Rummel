@@ -22,15 +22,14 @@ const Btn = () => {
   }, [inView, animation]);
   return (
     <HeroSection3 ref={ref}>
+      <MainHeadingThree
+        initial={initial}
+        transition={{ delay: 0.3, duration: 0.6 }}
+        animate={animation}
+      >
+        Start Now
+      </MainHeadingThree>
       <ContainerBtn>
-        <MainHeadingThree
-          initial={initial}
-          transition={{ delay: 0.3, duration: 0.6 }}
-          animate={animation}
-        >
-          Start Now
-        </MainHeadingThree>
-
         <ButtonWrapper>
           <Link to="/mix&master">
             <NavBarBtn
