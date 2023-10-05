@@ -22,14 +22,15 @@ export const HeroSection2 = styled.section`
   }
 `;
 export const HeroSection3 = styled.section`
-  height: 50vh;
+  /* height: 70vh; */
   background-position: center;
   background-size: cover;
-  padding-top: clamp(10px, 5vh, 220px);
+  padding-top: clamp(10px, 5vh);
+  padding-bottom: 200px;
   box-shadow: inset 0 0 0 1000px rgba (0, 0, 0, 0.2);
   @media screen and (max-width: 768px) {
-    padding-top: 70px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 200px;
   }
 `;
 
@@ -81,7 +82,7 @@ export const ButtonWrapper = styled.div`
   flex-flow: wrap;
   gap: 6rem;
   @media screen and (max-width: 768px) {
-    gap: 0.5rem;
+    gap: 2rem;
   }
 `;
 

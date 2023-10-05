@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
 import { Link } from "gatsby";
-import { ContainerBtn, NavBarBtn, Row } from "../globalStyles";
+import { ContainerBtn, NavBarBtn } from "../globalStyles";
 import { ButtonWrapper, HeroSection3 } from "../styles/HeroStyles";
 import { MainHeadingThree } from "../globalStyles";
 
