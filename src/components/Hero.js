@@ -24,7 +24,7 @@ export default function Hero() {
           formats={["AUTO", "WEBP", "AVIF"]}
         />
         <Container>
-          <MainHeading>DGL AUDIO</MainHeading>
+          <MainHeading>Mix & Mastering</MainHeading>
           <HeroText>Make your music sound professional</HeroText>
           <ButtonWrapper>
             <Link to="/mix&master">
