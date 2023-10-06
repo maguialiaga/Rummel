@@ -6,6 +6,7 @@ import {
   FeatureWrapper,
   FeatureWrapper2,
   FeatureColumn,
+  FeatureColumn2,
   FeatureName,
   FeatureTextWrapper,
 } from "../styles/FeaturesStyles";
@@ -49,7 +50,7 @@ const Features = () => {
           ))}
         </FeatureWrapper>
         <FeatureWrapper2>
-          <FeatureColumn
+          <FeatureColumn2
             initial={initial}
             animate={animate}
             transition={{ duration: 0.7 + 3 * 0.1 }}
@@ -57,7 +58,7 @@ const Features = () => {
           >
             <FeatureName> Mastering </FeatureName>
             <FeatureText>"Stereo Mastering ---- 40 EUR"</FeatureText>
-          </FeatureColumn>
+          </FeatureColumn2>
         </FeatureWrapper2>
       </Container>
     </Section>

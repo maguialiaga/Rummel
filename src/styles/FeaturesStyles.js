@@ -48,6 +48,16 @@ export const FeatureColumn = styled(motion.div)`
   /* box-shadow: 0 20px 30px rgb(0, 0, 0, 0.15); */
   border-radius: 20px;
 `;
+export const FeatureColumn2 = styled(motion.div)`
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background: #f3f3f3;
+  padding: 100px;
+  /* box-shadow: 0 20px 30px rgb(0, 0, 0, 0.15); */
+  border-radius: 20px;
+`;
 
 export const FeatureImageWrapper = styled.div`
   margin-bottom: 1rem;
