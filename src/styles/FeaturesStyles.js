@@ -17,7 +17,8 @@ export const FeatureTextWrapper = styled.div`
 
 export const FeatureWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
   margin-top: 3rem;
   grid-gap: 3rem;
   @media screen and (max-width: 1100px) {
@@ -27,6 +28,14 @@ export const FeatureWrapper = styled.div`
   @media screen and (max-width: 568px) {
     grid-template-columns: repeat(1, 1fr);
   }
+`;
+
+export const FeatureWrapper2 = styled.div`
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 3rem;
+  grid-gap: 3rem;
 `;
 
 export const FeatureColumn = styled(motion.div)`

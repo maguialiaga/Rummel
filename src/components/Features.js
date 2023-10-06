@@ -4,6 +4,7 @@ import {
   FeatureText,
   FeatureTitle,
   FeatureWrapper,
+  FeatureWrapper2,
   FeatureColumn,
   FeatureName,
   FeatureTextWrapper,
@@ -47,6 +48,17 @@ const Features = () => {
             </FeatureColumn>
           ))}
         </FeatureWrapper>
+        <FeatureWrapper2>
+          <FeatureColumn
+            initial={initial}
+            animate={animate}
+            transition={{ duration: 0.7 + 3 * 0.1 }}
+            key={3}
+          >
+            <FeatureName> Mastering </FeatureName>
+            <FeatureText>"Stereo Mastering ---- 40 EUR"</FeatureText>
+          </FeatureColumn>
+        </FeatureWrapper2>
       </Container>
     </Section>
   );

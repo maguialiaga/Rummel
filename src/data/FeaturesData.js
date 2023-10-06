@@ -26,11 +26,11 @@ export const featuresData = [
     ],
     imgClass: "two",
   },
-  {
-    name: "Mastering",
-    description: ["", "Stereo Mastering ---- 40 EUR"],
-    imgClass: "three",
-  },
+  // {
+  //   name: "Mastering",
+  //   description: ["", "Stereo Mastering ---- 40 EUR"],
+  //   imgClass: "three",
+  // },
 ];
 
 export const preparation = [
