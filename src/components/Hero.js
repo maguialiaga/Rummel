@@ -18,11 +18,12 @@ export default function Hero() {
           src={video}
           autoPlay
           loop
-          muted
-          type={"video/mp4"}
-          // playsInline
+          // muted
+          // type={"video/mp4"}
+          playsInline
           // formats={["AUTO", "WEBP", "AVIF"]}
         />
+        <script>document.getElementById('vid').play();</script>
         <Container>
           <MainHeading>Mix & Mastering</MainHeading>
           <HeroText>Make your music sound professional</HeroText>
