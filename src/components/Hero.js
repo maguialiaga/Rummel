@@ -21,7 +21,7 @@ export default function Hero() {
           muted
           playsInline
           type={"video/mp4"}
-          formats={["AUTO", "WEBP", "AVIF"]}
+          // formats={["AUTO", "WEBP", "AVIF"]}
         />
         <Container>
           <MainHeading>Mix & Mastering</MainHeading>
