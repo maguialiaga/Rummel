@@ -18,7 +18,7 @@ export default function Hero() {
           src={video}
           autoPlay
           loop
-          // muted
+          muted
           // type={"video/mp4"}
           playsInline
           // formats={["AUTO", "WEBP", "AVIF"]}
