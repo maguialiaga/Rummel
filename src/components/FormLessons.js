@@ -65,14 +65,14 @@ const FormLessons = () => {
 
   const formData = [
     {
-      label: "Name",
+      label: "Name*",
       value: name,
       onChange: (e) => setName(e.target.value),
       type: "text",
       name: "user_name",
     },
     {
-      label: "Email",
+      label: "Email*",
       value: email,
       onChange: (e) => setEmail(e.target.value),
       type: "email",
