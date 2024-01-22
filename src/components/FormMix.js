@@ -172,7 +172,7 @@ const FormMix = () => {
                   <option value={"No preference"}>No preference</option>
                   <option value={"Djolee"}>Djolee</option>
                   <option value={"Gespona"}>Gespona</option>
-                  <option value={"Last men on earth"}>Last Men <Obj></Obj>n Earth</option>
+                  <option value={"Last men on earth"}>Last Men On Earth</option>
                 </FormSelect>
               </FormInputRow>
               <FormInputRow key={5}>
