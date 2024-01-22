@@ -34,8 +34,6 @@ const AboutUs = () => {
         <Container>
           <FeatureTextWrapper>
             <FeatureTitle>About Us</FeatureTitle>
-            {/* <Heading2></Heading2>
-            <Heading2>Budget</Heading2> */}
           </FeatureTextWrapper>
           <BioWrapper>
             <BioColumn
