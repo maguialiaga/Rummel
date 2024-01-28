@@ -111,7 +111,7 @@ const AboutUs = () => {
               <BioTextBis>{"Supported by"}</BioTextBis>
               <BioText>
                 {
-                  "Dixon, Mind Against, Echonomist, Hernan Cattaneo, Oliver Koletzki, Mano le tough, Massano, Trikk"
+                  "Dixon, Solomun, Mind Against, Echonomist, Hernan Cattaneo, Oliver Koletzki, Mano le tough, Massano, Trikk"
                 }
               </BioText>
               <Row
@@ -150,7 +150,9 @@ const AboutUs = () => {
               <BioName>{"LAST MEN ON EARTH"}</BioName>
               <br></br>
               <BioTextBis>{"Released on:"}</BioTextBis>
-              <BioText>{"Applied Magic, Sum Over Histories, Amancay"}</BioText>
+              <BioText>
+                {"TAU, Applied Magic, Sum Over Histories, Amancay"}
+              </BioText>
               <br></br>
               <BioTextBis>{"Supported by:"}</BioTextBis>
               <BioText>

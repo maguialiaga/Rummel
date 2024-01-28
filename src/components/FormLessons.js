@@ -118,7 +118,7 @@ const FormLessons = () => {
                   <option value={"No preference"}>No preference</option>
                   <option value={"Djolee"}>Djolee</option>
                   <option value={"Gespona"}>Gespona</option>
-                  <option value={"Last men on earth"}>Last men on earth</option>
+                  <option value={"Last men on earth"}>Last Men On Earth</option>
                 </FormSelect>
               </FormInputRow>
               <FormInputRow>

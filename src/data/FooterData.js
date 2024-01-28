@@ -15,12 +15,12 @@ export const footerSocialData = [
   {
     name: "Email",
     icon: iconStyle(MdOutlineEmail),
-    src: "mailto:rummelaudio@gmail.com",
+    src: "mailto:bulkaudio24@gmail.com",
   },
   {
     name: "Instagram",
     icon: iconStyle(FaInstagram),
-    src: "https://www.instagram.com/rummel_audio/",
+    src: "https://www.instagram.com/bulk_audio/",
   },
   // {
   //   name: "YouTube",

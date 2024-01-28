@@ -38,7 +38,7 @@ export default function Home() {
         <PreLoader />
       ) : (
         <Layout>
-          <Seo title="Rummel Audio" />
+          <Seo title="Bulk" />
           <Hero />
           <Hero2 />
 

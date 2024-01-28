@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 // import { navigate } from "@reach/router";
 // import { useLocation } from "react-router-dom";
 import logo from "../assets/rummel-negro.png";
+import logo2 from "../assets/bulk.png";
 import data from "../data/NavBarData";
 import { NavBarBtn } from "../globalStyles";
 import {
@@ -13,6 +14,7 @@ import {
   NavMenu,
   NavLinks,
   NavItem,
+  NavIcon2,
 } from "../styles/NavBarStyles";
 import { FiMenu, FiX } from "react-icons/fi";
 import { IconContext } from "react-icons";
@@ -48,6 +50,7 @@ export default function Navbar() {
           <NavbarContainer>
             <NavLogo to="/" onClick={closeMobileMenu}>
               <NavIcon src={logo} alt="logo" />
+              <NavIcon2 src={logo2} alt="logo" />
             </NavLogo>
             <MobileIcon onClick={handleClick}>
               {click ? <FiX /> : <FiMenu />}
