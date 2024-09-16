@@ -57,7 +57,7 @@ const Features = () => {
             key={3}
           >
             <FeatureName> Mastering </FeatureName>
-            <FeatureText>Stereo Mastering 40 EUR</FeatureText>
+            <FeatureText>Stereo Mastering 45 EUR</FeatureText>
           </FeatureColumn2>
         </FeatureWrapper2>
       </Container>
