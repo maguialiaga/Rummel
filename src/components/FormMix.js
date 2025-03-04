@@ -48,7 +48,7 @@ const FormMix = () => {
     emailjs
       .sendForm(
         "service_3h13353",
-        "template_6e5i939",
+        "template_1iswz6k",
         form.current,
         "vRc98fB-F8s0iNWTT"
       )
