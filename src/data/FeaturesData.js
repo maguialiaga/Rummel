@@ -9,26 +9,26 @@ export const featuresData = [
   {
     name: "Mixdown",
     description: [
-      "Up to 15 stems --- 120 EUR",
-      "15 to 30 stems --- 145 EUR",
-      "31 to 45 stems --- 180 EUR",
-      "+ than 45 stems --- 215 EUR",
+      "Up to 15 stems --- 130 EUR",
+      "15 to 30 stems --- 155 EUR",
+      "31 to 45 stems --- 190 EUR",
+      "+ than 45 stems --- 225 EUR",
     ],
     imgClass: "one",
   },
   {
     name: "Mixdown & Mastering",
     description: [
-      "Up to 15 stems --- 135 EUR",
-      "16 to 30 stems --- 160 EUR",
-      "31 to 45 stems --- 200 EUR",
-      "+ than 45 stems --- 230 EUR",
+      "Up to 15 stems --- 145 EUR",
+      "16 to 30 stems --- 170 EUR",
+      "31 to 45 stems --- 210 EUR",
+      "+ than 45 stems --- 240 EUR",
     ],
     imgClass: "two",
   },
   // {
   //   name: "Mastering",
-  //   description: ["", "Stereo Mastering ---- 40 EUR"],
+  //   description: ["", "Stereo Mastering ---- 50 EUR"],
   //   imgClass: "three",
   // },
 ];
